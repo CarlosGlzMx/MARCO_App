@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BADC26D5B291002EBF04 /* AppDelegate.swift */; };
+		CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */; };
+		CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAE026D5B291002EBF04 /* ViewController.swift */; };
+		CB79BAE426D5B291002EBF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB79BAE226D5B291002EBF04 /* Main.storyboard */; };
+		CB79BAE626D5B2A3002EBF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB79BAE526D5B2A3002EBF04 /* Assets.xcassets */; };
+		CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */; };
+		CB79BAF426D5B2A3002EBF04 /* MARCO_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAF326D5B2A3002EBF04 /* MARCO_AppTests.swift */; };
+		CB79BAFF26D5B2A3002EBF04 /* MARCO_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB79BAF026D5B2A3002EBF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB79BAD126D5B291002EBF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB79BAD826D5B291002EBF04;
+			remoteInfo = MARCO_App;
+		};
+		CB79BAFB26D5B2A3002EBF04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB79BAD126D5B291002EBF04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB79BAD826D5B291002EBF04;
+			remoteInfo = MARCO_App;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB79BAD926D5B291002EBF04 /* MARCO_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARCO_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79BADC26D5B291002EBF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB79BAE026D5B291002EBF04 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB79BAE326D5B291002EBF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB79BAE526D5B2A3002EBF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB79BAE826D5B2A3002EBF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB79BAEA26D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB79BAEF26D5B2A3002EBF04 /* MARCO_AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79BAF326D5B2A3002EBF04 /* MARCO_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppTests.swift; sourceTree = "<group>"; };
+		CB79BAF526D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppUITests.swift; sourceTree = "<group>"; };
+		CB79BB0026D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB79BAD626D5B291002EBF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAEC26D5B2A3002EBF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAF726D5B2A3002EBF04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB79BAD026D5B291002EBF04 = {
+			isa = PBXGroup;
+			children = (
+				CB79BADB26D5B291002EBF04 /* MARCO_App */,
+				CB79BAF226D5B2A3002EBF04 /* MARCO_AppTests */,
+				CB79BAFD26D5B2A3002EBF04 /* MARCO_AppUITests */,
+				CB79BADA26D5B291002EBF04 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB79BADA26D5B291002EBF04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB79BAD926D5B291002EBF04 /* MARCO_App.app */,
+				CB79BAEF26D5B2A3002EBF04 /* MARCO_AppTests.xctest */,
+				CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB79BADB26D5B291002EBF04 /* MARCO_App */ = {
+			isa = PBXGroup;
+			children = (
+				CB79BADC26D5B291002EBF04 /* AppDelegate.swift */,
+				CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */,
+				CB79BAE026D5B291002EBF04 /* ViewController.swift */,
+				CB79BAE226D5B291002EBF04 /* Main.storyboard */,
+				CB79BAE526D5B2A3002EBF04 /* Assets.xcassets */,
+				CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */,
+				CB79BAEA26D5B2A3002EBF04 /* Info.plist */,
+			);
+			path = MARCO_App;
+			sourceTree = "<group>";
+		};
+		CB79BAF226D5B2A3002EBF04 /* MARCO_AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB79BAF326D5B2A3002EBF04 /* MARCO_AppTests.swift */,
+				CB79BAF526D5B2A3002EBF04 /* Info.plist */,
+			);
+			path = MARCO_AppTests;
+			sourceTree = "<group>";
+		};
+		CB79BAFD26D5B2A3002EBF04 /* MARCO_AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */,
+				CB79BB0026D5B2A3002EBF04 /* Info.plist */,
+			);
+			path = MARCO_AppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB79BAD826D5B291002EBF04 /* MARCO_App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79BB0326D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_App" */;
+			buildPhases = (
+				CB79BAD526D5B291002EBF04 /* Sources */,
+				CB79BAD626D5B291002EBF04 /* Frameworks */,
+				CB79BAD726D5B291002EBF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MARCO_App;
+			productName = MARCO_App;
+			productReference = CB79BAD926D5B291002EBF04 /* MARCO_App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB79BAEE26D5B2A3002EBF04 /* MARCO_AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79BB0626D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppTests" */;
+			buildPhases = (
+				CB79BAEB26D5B2A3002EBF04 /* Sources */,
+				CB79BAEC26D5B2A3002EBF04 /* Frameworks */,
+				CB79BAED26D5B2A3002EBF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB79BAF126D5B2A3002EBF04 /* PBXTargetDependency */,
+			);
+			name = MARCO_AppTests;
+			productName = MARCO_AppTests;
+			productReference = CB79BAEF26D5B2A3002EBF04 /* MARCO_AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB79BAF926D5B2A3002EBF04 /* MARCO_AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB79BB0926D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppUITests" */;
+			buildPhases = (
+				CB79BAF626D5B2A3002EBF04 /* Sources */,
+				CB79BAF726D5B2A3002EBF04 /* Frameworks */,
+				CB79BAF826D5B2A3002EBF04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB79BAFC26D5B2A3002EBF04 /* PBXTargetDependency */,
+			);
+			name = MARCO_AppUITests;
+			productName = MARCO_AppUITests;
+			productReference = CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB79BAD126D5B291002EBF04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CB79BAD826D5B291002EBF04 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					CB79BAEE26D5B2A3002EBF04 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CB79BAD826D5B291002EBF04;
+					};
+					CB79BAF926D5B2A3002EBF04 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = CB79BAD826D5B291002EBF04;
+					};
+				};
+			};
+			buildConfigurationList = CB79BAD426D5B291002EBF04 /* Build configuration list for PBXProject "MARCO_App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB79BAD026D5B291002EBF04;
+			productRefGroup = CB79BADA26D5B291002EBF04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB79BAD826D5B291002EBF04 /* MARCO_App */,
+				CB79BAEE26D5B2A3002EBF04 /* MARCO_AppTests */,
+				CB79BAF926D5B2A3002EBF04 /* MARCO_AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB79BAD726D5B291002EBF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */,
+				CB79BAE626D5B2A3002EBF04 /* Assets.xcassets in Resources */,
+				CB79BAE426D5B291002EBF04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAED26D5B2A3002EBF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAF826D5B2A3002EBF04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB79BAD526D5B291002EBF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
+				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
+				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAEB26D5B2A3002EBF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB79BAF426D5B2A3002EBF04 /* MARCO_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB79BAF626D5B2A3002EBF04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB79BAFF26D5B2A3002EBF04 /* MARCO_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB79BAF126D5B2A3002EBF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB79BAD826D5B291002EBF04 /* MARCO_App */;
+			targetProxy = CB79BAF026D5B2A3002EBF04 /* PBXContainerItemProxy */;
+		};
+		CB79BAFC26D5B2A3002EBF04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB79BAD826D5B291002EBF04 /* MARCO_App */;
+			targetProxy = CB79BAFB26D5B2A3002EBF04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB79BAE226D5B291002EBF04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB79BAE326D5B291002EBF04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB79BAE826D5B2A3002EBF04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB79BB0126D5B2A3002EBF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB79BB0226D5B2A3002EBF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB79BB0426D5B2A3002EBF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB79BB0526D5B2A3002EBF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB79BB0726D5B2A3002EBF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARCO_App.app/MARCO_App";
+			};
+			name = Debug;
+		};
+		CB79BB0826D5B2A3002EBF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_AppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARCO_App.app/MARCO_App";
+			};
+			name = Release;
+		};
+		CB79BB0A26D5B2A3002EBF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MARCO_App;
+			};
+			name = Debug;
+		};
+		CB79BB0B26D5B2A3002EBF04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MARCO_AppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Equipo5-ITESM.MARCO-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MARCO_App;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB79BAD426D5B291002EBF04 /* Build configuration list for PBXProject "MARCO_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79BB0126D5B2A3002EBF04 /* Debug */,
+				CB79BB0226D5B2A3002EBF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79BB0326D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79BB0426D5B2A3002EBF04 /* Debug */,
+				CB79BB0526D5B2A3002EBF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79BB0626D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79BB0726D5B2A3002EBF04 /* Debug */,
+				CB79BB0826D5B2A3002EBF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB79BB0926D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB79BB0A26D5B2A3002EBF04 /* Debug */,
+				CB79BB0B26D5B2A3002EBF04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB79BAD126D5B291002EBF04 /* Project object */;
+}
