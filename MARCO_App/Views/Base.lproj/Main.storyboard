@@ -36,12 +36,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <state key="normal" title="Agendar visitas"/>
+                                <connections>
+                                    <segue destination="7Bx-62-fPa" kind="show" id="pbg-vK-kFc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
                                 <rect key="frame" x="20" y="264" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                                 <state key="normal" title="Reserva restaurante"/>
+                                <connections>
+                                    <segue destination="DrK-Oh-Oym" kind="show" id="Hq8-dW-CJb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,7 +72,7 @@
             <objects>
                 <viewController id="7Bx-62-fPa" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zZX-2e-dBN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBp-XB-XQD">
@@ -137,14 +143,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yw-Zo-zFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="796"/>
+            <point key="canvasLocation" x="980" y="867"/>
         </scene>
         <!--Restaurante View Controller-->
         <scene sceneID="rGF-hn-w7w">
             <objects>
                 <viewController id="DrK-Oh-Oym" customClass="restauranteViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQQ-Hb-pzP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAO-HE-Vqh">
