@@ -43,10 +43,70 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
-                    <rect key="frame" x="37" y="465" width="347" height="309"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pds-eQ-SfA">
+                    <rect key="frame" x="43" y="421" width="328" height="32"/>
+                    <segments>
+                        <segment title="Descripción"/>
+                        <segment title="Galería"/>
+                        <segment title="Recomendados"/>
+                    </segments>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-to-T3g">
+                    <rect key="frame" x="60" y="302" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5W6-aa-4yR"/>
+                        <constraint firstAttribute="width" constant="40" id="bc5-pq-tJY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCT-Y3-fu2">
+                    <rect key="frame" x="209" y="307" width="12" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="LoX-TX-TxG"/>
+                        <constraint firstAttribute="height" constant="30" id="dLJ-Q8-aTb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octubre 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
+                    <rect key="frame" x="103" y="313" width="100" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="N7U-Fd-cLV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="agosto 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbM-av-M2W">
+                    <rect key="frame" x="229" y="313" width="100" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="f8y-wK-9cb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-K3-Gvg">
+                    <rect key="frame" x="27" y="348" width="361" height="52"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2hJ-0w-ZaV"/>
+                        <constraint firstAttribute="width" constant="360" id="ACI-89-H9w"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
+                    <rect key="frame" x="41" y="466" width="347" height="309"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="350" id="GpA-h2-o4h"/>
+                        <constraint firstAttribute="height" constant="300" id="YaS-52-nAi"/>
+                    </constraints>
                     <mutableString key="text">A raíz de la fuerte crisis económica que enfrentan los museos a nivel internacional, y derivado de la necesidad de buscar nuevos posicionamientos de las producciones artísticas actuales, MARCO pensó en el patio de las esculturas como una posibilidad de generar nexos con la comunidad artística de Monterrey que se ha preocupado por buscar un lugar en el espacio institucional global. Por tal motivo, su directora Taiyana Pimentel en colaboración con los Miembros del Consejo Directivo, pensaron en este proyecto.
 
 El subtexto de la exposición es relevante al momento que estamos todos viviendo e incita a reflexionar sobre las maneras en las cuales los eventos de actualidad informan el trabajo creativo de artistas reconocidos mundialmente.
@@ -56,50 +116,24 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pds-eQ-SfA">
-                    <rect key="frame" x="46" y="417" width="328" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <segments>
-                        <segment title="Descripción"/>
-                        <segment title="Galería"/>
-                        <segment title="Recomendados"/>
-                    </segments>
-                </segmentedControl>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="16" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-to-T3g">
-                    <rect key="frame" x="37" y="295" width="30" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="octubre 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
-                    <rect key="frame" x="75" y="304" width="94" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="agosto 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SbM-av-M2W">
-                    <rect key="frame" x="211" y="304" width="85" height="18"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-K3-Gvg">
-                    <rect key="frame" x="27" y="348" width="361" height="52"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="buF-K3-Gvg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2xt-CL-iWD"/>
+                <constraint firstItem="vCT-Y3-fu2" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="20" id="5Mo-15-Qeq"/>
+                <constraint firstItem="6sj-to-T3g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="9aC-rw-xwF"/>
+                <constraint firstItem="SbM-av-M2W" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="26" id="DvG-KW-M7b"/>
+                <constraint firstItem="Pds-eQ-SfA" firstAttribute="top" secondItem="buF-K3-Gvg" secondAttribute="bottom" constant="20" id="FtR-Yp-L5T"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HL6-FK-IFY"/>
+                <constraint firstItem="Pds-eQ-SfA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYe-35-Fik"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ja4-Xf-vMb"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QXc-rg-Pv3"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="Pds-eQ-SfA" secondAttribute="bottom" constant="15" id="Zxm-Tf-gce"/>
+                <constraint firstItem="vjW-AX-iRC" firstAttribute="leading" secondItem="6sj-to-T3g" secondAttribute="trailing" constant="3" id="djK-WM-6GF"/>
+                <constraint firstItem="vCT-Y3-fu2" firstAttribute="leading" secondItem="vjW-AX-iRC" secondAttribute="trailing" constant="6" id="hCC-hB-Zdr"/>
+                <constraint firstItem="6sj-to-T3g" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="15" id="wGy-W0-ODc"/>
+                <constraint firstItem="vjW-AX-iRC" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="26" id="xoK-aj-z4s"/>
                 <constraint firstAttribute="trailing" secondItem="TvJ-p2-BkL" secondAttribute="trailing" id="xoO-m3-15F"/>
             </constraints>
             <point key="canvasLocation" x="95.652173913043484" y="89.732142857142847"/>
