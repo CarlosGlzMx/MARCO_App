@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,49 +16,105 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hola, Mundo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eny-Qw-emI">
-                                <rect key="frame" x="156" y="60" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
-                                <rect key="frame" x="20" y="125" width="374" height="30"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <state key="normal" title="Exposiciones"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
+                                <rect key="frame" x="22" y="266" width="175" height="250"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="0wD-bT-LVL"/>
+                                    <constraint firstAttribute="height" constant="250" id="QQc-QZ-qmd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="EXPOSICIONES">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="LQq-i9-7JR" kind="show" id="reX-VO-aTe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
-                                <rect key="frame" x="20" y="197" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <state key="normal" title="Agendar visitas"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
+                                <rect key="frame" x="217" y="266" width="175" height="250"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BY3-wr-2fg"/>
+                                    <constraint firstAttribute="width" constant="175" id="bQg-iR-vBF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="VISITAS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="7Bx-62-fPa" kind="show" id="pbg-vK-kFc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
-                                <rect key="frame" x="20" y="264" width="374" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <state key="normal" title="Reserva restaurante"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
+                                <rect key="frame" x="22" y="540" width="175" height="250"/>
+                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="Qya-hg-m8h"/>
+                                    <constraint firstAttribute="width" constant="175" id="fxw-ph-mT3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="RESTAURANTE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="DrK-Oh-Oym" kind="show" id="Hq8-dW-CJb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
+                                <rect key="frame" x="217" y="540" width="175" height="250"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.20392156862745098" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="Xa2-x8-H3F"/>
+                                    <constraint firstAttribute="height" constant="250" id="YY5-WZ-xLC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="MÁS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1586893659313" translatesAutoresizingMaskIntoConstraints="NO" id="4hs-pJ-6XL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <color key="backgroundColor" red="0.90588235294117647" green="0.0" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-un-Fgy">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.74509803919999995" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="  ¡ENCUENTRA EL MUSEO!" image="map" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="muestraUbi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jK-kX-1oK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.95686274509803915" green="0.92941176470588238" blue="0.90588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="yO4-su-CdQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dJS-aQ-CNo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4hs-pJ-6XL" secondAttribute="trailing" id="4Oe-xx-IZn"/>
+                            <constraint firstItem="dQg-un-Fgy" firstAttribute="top" secondItem="hr7-hG-eR5" secondAttribute="bottom" constant="22" id="5Fc-qF-rDf"/>
+                            <constraint firstItem="4hs-pJ-6XL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A6f-54-FIK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rRq-GS-l27" secondAttribute="trailing" constant="22" id="Ah1-aT-Bz1"/>
+                            <constraint firstItem="hr7-hG-eR5" firstAttribute="top" secondItem="yO4-su-CdQ" secondAttribute="bottom" constant="24" id="ByT-XX-eDx"/>
+                            <constraint firstItem="dQg-un-Fgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cfg-bK-4O3"/>
+                            <constraint firstItem="yO4-su-CdQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="IBN-Nt-baa"/>
+                            <constraint firstItem="4hs-pJ-6XL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KE6-ci-ino"/>
+                            <constraint firstItem="yO4-su-CdQ" firstAttribute="top" secondItem="4hs-pJ-6XL" secondAttribute="bottom" constant="22" id="VFQ-8z-cUx"/>
+                            <constraint firstItem="rRq-GS-l27" firstAttribute="top" secondItem="4hs-pJ-6XL" secondAttribute="bottom" constant="22" id="WeC-qw-1VC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8oH-H4-XYO" secondAttribute="trailing" constant="22" id="hIc-nY-6j4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQg-un-Fgy" secondAttribute="bottom" id="kcq-Tg-KQM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQg-un-Fgy" secondAttribute="trailing" id="pZn-Fe-qgz"/>
+                            <constraint firstItem="hr7-hG-eR5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="s0s-6a-lED"/>
+                            <constraint firstItem="8oH-H4-XYO" firstAttribute="top" secondItem="rRq-GS-l27" secondAttribute="bottom" constant="24" id="s5y-wG-31o"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4ph-oz-gDr"/>
                     <connections>
                         <outlet property="exposicionesBtn" destination="yO4-su-CdQ" id="FYI-fi-uco"/>
+                        <outlet property="marcoLogo" destination="4hs-pJ-6XL" id="ZHI-GN-0ZB"/>
                         <outlet property="reservasBtn" destination="hr7-hG-eR5" id="TiR-02-IVR"/>
                         <outlet property="vistasBtn" destination="rRq-GS-l27" id="2LZ-vg-4wN"/>
                     </connections>
@@ -172,11 +228,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="1586893659313" width="200" height="200"/>
+        <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
