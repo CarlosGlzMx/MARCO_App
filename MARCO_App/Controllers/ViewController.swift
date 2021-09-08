@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var marcoLogo: UIImageView!
     @IBOutlet weak var exposicionesBtn: UIButton!
     
     
@@ -20,8 +21,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
-
-
+    
+    @IBAction func muestraUbi(_ sender: Any) {
+        if let url = URL(string: "https://maps.google.com/?cid=13510301288881986484") {
+              UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
+    }
 }
 
