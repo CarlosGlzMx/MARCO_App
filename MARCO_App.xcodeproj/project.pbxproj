@@ -44,13 +44,8 @@
 
 /* Begin PBXFileReference section */
 		2DD4955D38DD430F6122EBA0 /* Pods_MARCO_App_MARCO_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_App_MARCO_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4137B148C45CBF7C6984B5FB /* Pods_MARCO_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6F22D8E826E8581A00B287E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_App/Pods-MARCO_App.debug.xcconfig"; sourceTree = "<group>"; };
-		76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App-MARCO_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App.release.xcconfig"; path = "Target Support Files/Pods-MARCO_App/Pods-MARCO_App.release.xcconfig"; sourceTree = "<group>"; };
 		CB79BAD926D5B291002EBF04 /* MARCO_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARCO_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BADC26D5B291002EBF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +60,6 @@
 		CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppUITests.swift; sourceTree = "<group>"; };
 		CB79BB0026D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA26C50526D5E20E000553C8 /* restauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restauranteViewController.swift; sourceTree = "<group>"; };
 		EA26C50726D5E261000553C8 /* exposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesViewController.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
@@ -101,19 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0278A712E35C37B68BF0CC39 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */,
-				88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */,
-				3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */,
-				76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */,
-				62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */,
-				E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		78DA23460A8E559585435FC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +112,6 @@
 				CB79BAF226D5B2A3002EBF04 /* MARCO_AppTests */,
 				CB79BAFD26D5B2A3002EBF04 /* MARCO_AppUITests */,
 				CB79BADA26D5B291002EBF04 /* Products */,
-				0278A712E35C37B68BF0CC39 /* Pods */,
 				78DA23460A8E559585435FC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -625,12 +605,12 @@
 		};
 		CB79BB0426D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MARCO_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -644,12 +624,12 @@
 		};
 		CB79BB0526D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MARCO_App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,7 +643,6 @@
 		};
 		CB79BB0726D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -685,7 +664,6 @@
 		};
 		CB79BB0826D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -707,7 +685,6 @@
 		};
 		CB79BB0A26D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -727,7 +704,6 @@
 		};
 		CB79BB0B26D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
