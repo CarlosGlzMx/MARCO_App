@@ -322,9 +322,39 @@
                                     <navigationItem title="Reserva de restaurantes" id="ofe-yX-QUD"/>
                                 </items>
                             </navigationBar>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Sq-tHh">
+                                <rect key="frame" x="0.0" y="170" width="414" height="162"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-b8-aJK">
+                                <rect key="frame" x="20" y="404" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-iM-fx4">
+                                <rect key="frame" x="20" y="477" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de Visitantes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klG-in-FEU">
+                                <rect key="frame" x="20" y="560" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qCd-1U-XID"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="QeI-b8-aJK" secondAttribute="trailing" constant="20" id="8Vh-FY-4l7"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="2dF-iM-fx4" secondAttribute="trailing" constant="20" id="ReO-hi-lxK"/>
+                            <constraint firstItem="2dF-iM-fx4" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="XRl-dW-JAR"/>
+                            <constraint firstItem="QeI-b8-aJK" firstAttribute="top" secondItem="Fvb-Sq-tHh" secondAttribute="bottom" constant="20" id="aQR-xq-1Rw"/>
+                            <constraint firstItem="QeI-b8-aJK" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="js1-Fk-48E"/>
+                            <constraint firstItem="klG-in-FEU" firstAttribute="top" secondItem="2dF-iM-fx4" secondAttribute="bottom" constant="30" id="k4K-nP-Bca"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="klG-in-FEU" secondAttribute="trailing" constant="20" id="w8W-6P-i8B"/>
+                            <constraint firstItem="2dF-iM-fx4" firstAttribute="top" secondItem="QeI-b8-aJK" secondAttribute="bottom" constant="20" id="wrG-lL-GN0"/>
+                            <constraint firstItem="klG-in-FEU" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="zIk-7a-Odt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5kh-tg-2IT"/>
                 </viewController>
