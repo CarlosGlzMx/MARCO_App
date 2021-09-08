@@ -123,7 +123,6 @@
 				B1E4B807107102E1CCD77508 /* Pods-MARCO_AppTests.debug.xcconfig */,
 				EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -280,6 +279,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = com.tec.tc2007b;
 				TargetAttributes = {
 					CB79BAD826D5B291002EBF04 = {
 						CreatedOnToolsVersion = 12.5.1;

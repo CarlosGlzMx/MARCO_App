@@ -29,7 +29,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-rI-x9k">
                                 <rect key="frame" x="20" y="654" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6x-BH-AHI">
                                 <rect key="frame" x="20" y="738" width="374" height="45"/>
@@ -41,6 +41,7 @@
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="INICIAR SESIÓN"/>
                                 <connections>
+                                    <action selector="loggedIn:" destination="6pN-co-r7D" eventType="touchUpInside" id="PBA-48-9ky"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="AQ5-EW-9sY"/>
                                 </connections>
                             </button>
@@ -91,7 +92,6 @@
                     </view>
                     <connections>
                         <outlet property="emailField" destination="cpg-xS-NcR" id="NHx-ry-ApN"/>
-                        <outlet property="loginbtn" destination="O6x-BH-AHI" id="u5I-dv-28v"/>
                         <outlet property="logo" destination="a5P-zB-Fqj" id="1Zt-d4-cNW"/>
                         <outlet property="passwordField" destination="Vda-rI-x9k" id="9Yc-11-c6m"/>
                     </connections>
