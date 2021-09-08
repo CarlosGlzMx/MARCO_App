@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		667D9FCCD5F22CF7AAAADA9A /* Pods_MARCO_App_MARCO_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD4955D38DD430F6122EBA0 /* Pods_MARCO_App_MARCO_AppUITests.framework */; };
+		6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F22D8E826E8581A00B287E8 /* LoginViewController.swift */; };
+		75AEF64FD5E6CB9887CDB5CE /* Pods_MARCO_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4137B148C45CBF7C6984B5FB /* Pods_MARCO_App.framework */; };
+		A55ADBBA6128910FB972F3FE /* Pods_MARCO_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD87AACA823D17F10E4F6EE6 /* Pods_MARCO_AppTests.framework */; };
 		CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BADC26D5B291002EBF04 /* AppDelegate.swift */; };
 		CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */; };
 		CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAE026D5B291002EBF04 /* ViewController.swift */; };
@@ -39,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2DD4955D38DD430F6122EBA0 /* Pods_MARCO_App_MARCO_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_App_MARCO_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4137B148C45CBF7C6984B5FB /* Pods_MARCO_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F22D8E826E8581A00B287E8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App.debug.xcconfig"; path = "Target Support Files/Pods-MARCO_App/Pods-MARCO_App.debug.xcconfig"; sourceTree = "<group>"; };
+		76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App-MARCO_AppUITests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_App.release.xcconfig"; path = "Target Support Files/Pods-MARCO_App/Pods-MARCO_App.release.xcconfig"; sourceTree = "<group>"; };
 		CB79BAD926D5B291002EBF04 /* MARCO_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARCO_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BADC26D5B291002EBF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,10 +65,12 @@
 		CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppUITests.swift; sourceTree = "<group>"; };
 		CB79BB0026D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA26C50526D5E20E000553C8 /* restauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restauranteViewController.swift; sourceTree = "<group>"; };
 		EA26C50726D5E261000553C8 /* exposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesViewController.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
+		FD87AACA823D17F10E4F6EE6 /* Pods_MARCO_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75AEF64FD5E6CB9887CDB5CE /* Pods_MARCO_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55ADBBA6128910FB972F3FE /* Pods_MARCO_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +94,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				667D9FCCD5F22CF7AAAADA9A /* Pods_MARCO_App_MARCO_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0278A712E35C37B68BF0CC39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */,
+				88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */,
+				3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */,
+				76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */,
+				62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */,
+				E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		78DA23460A8E559585435FC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4137B148C45CBF7C6984B5FB /* Pods_MARCO_App.framework */,
+				2DD4955D38DD430F6122EBA0 /* Pods_MARCO_App_MARCO_AppUITests.framework */,
+				FD87AACA823D17F10E4F6EE6 /* Pods_MARCO_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB79BAD026D5B291002EBF04 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +132,8 @@
 				CB79BAF226D5B2A3002EBF04 /* MARCO_AppTests */,
 				CB79BAFD26D5B2A3002EBF04 /* MARCO_AppUITests */,
 				CB79BADA26D5B291002EBF04 /* Products */,
+				0278A712E35C37B68BF0CC39 /* Pods */,
+				78DA23460A8E559585435FC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +203,7 @@
 				EA26C50526D5E20E000553C8 /* restauranteViewController.swift */,
 				EA26C50726D5E261000553C8 /* exposicionesViewController.swift */,
 				EAFA333A26E80AF10072D0AC /* ObraViewController.swift */,
+				6F22D8E826E8581A00B287E8 /* LoginViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB79BB0326D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_App" */;
 			buildPhases = (
+				C0ABE0CA43D5C2585029B6BD /* [CP] Check Pods Manifest.lock */,
 				CB79BAD526D5B291002EBF04 /* Sources */,
 				CB79BAD626D5B291002EBF04 /* Frameworks */,
 				CB79BAD726D5B291002EBF04 /* Resources */,
+				D60CC0E1C08EECA65571CBA4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -188,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB79BB0626D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppTests" */;
 			buildPhases = (
+				12B0EF98E917E85009326FC5 /* [CP] Check Pods Manifest.lock */,
 				CB79BAEB26D5B2A3002EBF04 /* Sources */,
 				CB79BAEC26D5B2A3002EBF04 /* Frameworks */,
 				CB79BAED26D5B2A3002EBF04 /* Resources */,
@@ -206,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB79BB0926D5B2A3002EBF04 /* Build configuration list for PBXNativeTarget "MARCO_AppUITests" */;
 			buildPhases = (
+				10C7E8BBC1D5E79A41D1A9CA /* [CP] Check Pods Manifest.lock */,
 				CB79BAF626D5B2A3002EBF04 /* Sources */,
 				CB79BAF726D5B2A3002EBF04 /* Frameworks */,
 				CB79BAF826D5B2A3002EBF04 /* Resources */,
+				D4B54CBA6DF481A97F766DA9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,11 +339,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10C7E8BBC1D5E79A41D1A9CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MARCO_App-MARCO_AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		12B0EF98E917E85009326FC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MARCO_AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0ABE0CA43D5C2585029B6BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MARCO_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4B54CBA6DF481A97F766DA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARCO_App-MARCO_AppUITests/Pods-MARCO_App-MARCO_AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60CC0E1C08EECA65571CBA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARCO_App/Pods-MARCO_App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARCO_App/Pods-MARCO_App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARCO_App/Pods-MARCO_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB79BAD526D5B291002EBF04 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */,
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
 				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
@@ -473,6 +626,7 @@
 		};
 		CB79BB0426D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70E37CE71C00ACFB99A1A179 /* Pods-MARCO_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +645,7 @@
 		};
 		CB79BB0526D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88BEAA0CC02F32262715E886 /* Pods-MARCO_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,6 +664,7 @@
 		};
 		CB79BB0726D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62A558D18A8BC6047F6D0296 /* Pods-MARCO_AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +686,7 @@
 		};
 		CB79BB0826D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52F1DD6E16E1E87F5E5B5B2 /* Pods-MARCO_AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +708,7 @@
 		};
 		CB79BB0A26D5B2A3002EBF04 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA5FE70699F47AFEA7226EF /* Pods-MARCO_App-MARCO_AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +728,7 @@
 		};
 		CB79BB0B26D5B2A3002EBF04 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76B7B7275581CEB2D34F798A /* Pods-MARCO_App-MARCO_AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
