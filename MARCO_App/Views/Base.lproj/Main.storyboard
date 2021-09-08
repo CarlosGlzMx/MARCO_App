@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -90,10 +90,10 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="email" destination="cpg-xS-NcR" id="R53-0Y-Wr4"/>
+                        <outlet property="emailField" destination="cpg-xS-NcR" id="NHx-ry-ApN"/>
                         <outlet property="loginbtn" destination="O6x-BH-AHI" id="u5I-dv-28v"/>
                         <outlet property="logo" destination="a5P-zB-Fqj" id="1Zt-d4-cNW"/>
-                        <outlet property="password" destination="Vda-rI-x9k" id="phN-4S-Ulr"/>
+                        <outlet property="passwordField" destination="Vda-rI-x9k" id="9Yc-11-c6m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0q-YK-ZvJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

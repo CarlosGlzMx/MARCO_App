@@ -11,10 +11,9 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var emailbtn: UITextField!
-    @IBOutlet weak var passwordbtn: UITextField!
     @IBOutlet weak var loginbtn: UIButton!
-    
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
