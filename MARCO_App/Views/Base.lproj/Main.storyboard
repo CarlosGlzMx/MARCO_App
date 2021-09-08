@@ -150,7 +150,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DrK-Oh-Oym" kind="show" id="Hq8-dW-CJb"/>
+                                    <segue destination="t3C-1q-Cp9" kind="show" id="Hq8-dW-CJb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
@@ -315,15 +315,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAO-HE-Vqh">
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAO-HE-Vqh">
                                 <rect key="frame" x="0.0" y="65" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99254232649999996" green="0.78986579180000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="Reserva de restaurantes" id="ofe-yX-QUD"/>
                                 </items>
                             </navigationBar>
-                            <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Sq-tHh">
-                                <rect key="frame" x="0.0" y="170" width="414" height="162"/>
+                            <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Sq-tHh">
+                                <rect key="frame" x="20" y="170" width="370" height="145"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-b8-aJK">
@@ -341,24 +341,57 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-i6-zOb">
+                                <rect key="frame" x="50" y="655" width="314" height="30"/>
+                                <color key="backgroundColor" red="0.85526383399999995" green="0.0" blue="0.57960849739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="RESERVAR">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qCd-1U-XID"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="QeI-b8-aJK" secondAttribute="trailing" constant="20" id="8Vh-FY-4l7"/>
-                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="2dF-iM-fx4" secondAttribute="trailing" constant="20" id="ReO-hi-lxK"/>
-                            <constraint firstItem="2dF-iM-fx4" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="XRl-dW-JAR"/>
-                            <constraint firstItem="QeI-b8-aJK" firstAttribute="top" secondItem="Fvb-Sq-tHh" secondAttribute="bottom" constant="20" id="aQR-xq-1Rw"/>
-                            <constraint firstItem="QeI-b8-aJK" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="js1-Fk-48E"/>
-                            <constraint firstItem="klG-in-FEU" firstAttribute="top" secondItem="2dF-iM-fx4" secondAttribute="bottom" constant="30" id="k4K-nP-Bca"/>
-                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="klG-in-FEU" secondAttribute="trailing" constant="20" id="w8W-6P-i8B"/>
-                            <constraint firstItem="2dF-iM-fx4" firstAttribute="top" secondItem="QeI-b8-aJK" secondAttribute="bottom" constant="20" id="wrG-lL-GN0"/>
-                            <constraint firstItem="klG-in-FEU" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="zIk-7a-Odt"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="2dF-iM-fx4" secondAttribute="trailing" constant="20" id="59g-RV-7f6"/>
+                            <constraint firstItem="Fvb-Sq-tHh" firstAttribute="top" secondItem="lAO-HE-Vqh" secondAttribute="bottom" constant="50" id="6D1-Y9-1mB"/>
+                            <constraint firstItem="QeI-b8-aJK" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="7mD-4c-sAK"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="uGc-i6-zOb" secondAttribute="trailing" constant="50" id="8EO-rx-GzK"/>
+                            <constraint firstItem="klG-in-FEU" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="CNf-Qy-Wk2"/>
+                            <constraint firstItem="uGc-i6-zOb" firstAttribute="top" secondItem="klG-in-FEU" secondAttribute="bottom" constant="20" id="EHU-AW-u3Z"/>
+                            <constraint firstItem="2dF-iM-fx4" firstAttribute="top" secondItem="QeI-b8-aJK" secondAttribute="bottom" constant="20" id="GRE-SK-n6H"/>
+                            <constraint firstItem="2dF-iM-fx4" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="LSp-nN-8tK"/>
+                            <constraint firstItem="klG-in-FEU" firstAttribute="top" secondItem="2dF-iM-fx4" secondAttribute="bottom" constant="20" id="LVs-bV-R0k"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="klG-in-FEU" secondAttribute="trailing" constant="20" id="P6K-7d-cVj"/>
+                            <constraint firstItem="uGc-i6-zOb" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="50" id="ROk-OU-Aid"/>
+                            <constraint firstItem="qCd-1U-XID" firstAttribute="trailing" secondItem="QeI-b8-aJK" secondAttribute="trailing" constant="20" id="Sje-RZ-ts4"/>
+                            <constraint firstItem="QeI-b8-aJK" firstAttribute="top" secondItem="Fvb-Sq-tHh" secondAttribute="bottom" constant="30" id="jcI-LI-sgf"/>
+                            <constraint firstItem="Fvb-Sq-tHh" firstAttribute="trailing" secondItem="qCd-1U-XID" secondAttribute="trailing" constant="20" id="vaT-3W-ucF"/>
+                            <constraint firstItem="Fvb-Sq-tHh" firstAttribute="leading" secondItem="qCd-1U-XID" secondAttribute="leading" constant="20" id="zUr-V1-axa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5kh-tg-2IT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mY3-6T-sg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2723.1884057971015" y="87.723214285714278"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IYU-QQ-6x8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3C-1q-Cp9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="x4e-iF-cjC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVd-Zd-AMO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DrK-Oh-Oym" kind="relationship" relationship="rootViewController" id="4bt-Pn-6wY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xd2-Is-M4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.0434782608697" y="87.723214285714278"/>
         </scene>
@@ -370,6 +403,9 @@
         <image name="Proximamente2" width="820" height="561"/>
         <image name="img_24787" width="980" height="980"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
