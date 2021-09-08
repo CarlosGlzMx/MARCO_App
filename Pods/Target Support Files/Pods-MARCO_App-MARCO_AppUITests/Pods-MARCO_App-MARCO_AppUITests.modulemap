@@ -1,0 +1,6 @@
+framework module Pods_MARCO_App_MARCO_AppUITests {
+  umbrella header "Pods-MARCO_App-MARCO_AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
