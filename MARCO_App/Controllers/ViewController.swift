@@ -11,12 +11,11 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var marcoLogo: UIImageView!
     @IBOutlet weak var exposicionesBtn: UIButton!
-    
-    
     @IBOutlet weak var vistasBtn: UIButton!
-    
-    
     @IBOutlet weak var reservasBtn: UIButton!
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
