@@ -8,3 +8,6 @@ Aplicacion IOS para el museo MARCO
 - Juan Pablo Salazár - A01740200
 - Fernando Nicolás Martínez - A00825518
 - Alexia Saucedo - A01283646
+
+# Presentacion del diseño
+http://docs.google.com/presentation/d/1rLau8CBZ3p9uYiTruRcO7RRvOtuy8B5zJ0qBCWlgJS8/edit?usp=sharing
