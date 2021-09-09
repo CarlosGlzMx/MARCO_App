@@ -238,7 +238,25 @@
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7QM-71-hmc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="qtL-Dj-rgE" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="1gU-Ca-tka"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="qtL-Dj-rgE" secondAttribute="trailing" constant="20" id="82V-Ac-7GO"/>
+                            <constraint firstItem="lwr-Lk-6bl" firstAttribute="top" secondItem="SzF-p7-aaj" secondAttribute="bottom" constant="20" id="Hzk-Cy-6rM"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="SzF-p7-aaj" secondAttribute="trailing" constant="20" id="Nro-c2-EBi"/>
+                            <constraint firstItem="aE4-5a-8Kp" firstAttribute="top" secondItem="qtL-Dj-rgE" secondAttribute="bottom" constant="100" id="OZg-D2-iHf"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="aE4-5a-8Kp" secondAttribute="trailing" constant="20" id="SKY-9y-jxY"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="lwr-Lk-6bl" secondAttribute="trailing" constant="50" id="XV0-8C-RCy"/>
+                            <constraint firstItem="aE4-5a-8Kp" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="cML-Vj-XYB"/>
+                            <constraint firstItem="SzF-p7-aaj" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="g6N-8z-4Ce"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="rUw-jr-DfQ" secondAttribute="trailing" constant="20" id="hWw-vE-NkB"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="bottom" secondItem="lwr-Lk-6bl" secondAttribute="bottom" constant="179" id="iBF-za-hPM"/>
+                            <constraint firstItem="SzF-p7-aaj" firstAttribute="top" secondItem="rUw-jr-DfQ" secondAttribute="bottom" constant="20" id="mmd-cf-vB3"/>
+                            <constraint firstItem="lwr-Lk-6bl" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="50" id="pmK-B6-usx"/>
+                            <constraint firstItem="qtL-Dj-rgE" firstAttribute="top" secondItem="7QM-71-hmc" secondAttribute="top" constant="100" id="wsX-LR-7zV"/>
+                            <constraint firstItem="rUw-jr-DfQ" firstAttribute="top" secondItem="aE4-5a-8Kp" secondAttribute="bottom" constant="41" id="yuC-IA-g7y"/>
+                            <constraint firstItem="rUw-jr-DfQ" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="zNh-Zw-Zj7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="a85-Ay-Qcl"/>
                 </viewController>
