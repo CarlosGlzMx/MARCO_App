@@ -13,14 +13,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var exposicionesBtn: UIButton!
     @IBOutlet weak var vistasBtn: UIButton!
     @IBOutlet weak var reservasBtn: UIButton!
-    
-    
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+    }
+    
+    @IBAction func muestraWebsite(_ sender: Any) {
+        if let url = URL(string: "https://marco.org.mx/") {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        }
     }
     
     @IBAction func muestraUbi(_ sender: Any) {
