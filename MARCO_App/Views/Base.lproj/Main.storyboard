@@ -42,7 +42,7 @@
                                 <state key="normal" title="INICIAR SESIÓN"/>
                                 <connections>
                                     <action selector="loggedIn:" destination="6pN-co-r7D" eventType="touchUpInside" id="PBA-48-9ky"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="AQ5-EW-9sY"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="AQ5-EW-9sY"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_24787" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-j3-ftF">
@@ -105,7 +105,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
@@ -171,7 +171,7 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQg-un-Fgy">
-                                <rect key="frame" x="0.0" y="768" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="768" width="414" height="94"/>
                                 <color key="backgroundColor" red="1" green="0.74509803919999995" blue="0.031372549020000001" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,7 +194,7 @@
                             <constraint firstItem="hr7-hG-eR5" firstAttribute="top" secondItem="yO4-su-CdQ" secondAttribute="bottom" constant="24" id="ByT-XX-eDx"/>
                             <constraint firstItem="dQg-un-Fgy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Cfg-bK-4O3"/>
                             <constraint firstItem="yO4-su-CdQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="22" id="IBN-Nt-baa"/>
-                            <constraint firstItem="4hs-pJ-6XL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KE6-ci-ino"/>
+                            <constraint firstItem="4hs-pJ-6XL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KE6-ci-ino"/>
                             <constraint firstItem="yO4-su-CdQ" firstAttribute="top" secondItem="4hs-pJ-6XL" secondAttribute="bottom" constant="22" id="VFQ-8z-cUx"/>
                             <constraint firstItem="rRq-GS-l27" firstAttribute="top" secondItem="4hs-pJ-6XL" secondAttribute="bottom" constant="22" id="WeC-qw-1VC"/>
                             <constraint firstItem="rRq-GS-l27" firstAttribute="leading" secondItem="yO4-su-CdQ" secondAttribute="trailing" constant="20" id="fzS-qo-KdK"/>
@@ -352,7 +352,7 @@ CEFnZW5kYSBkZSB2aXNpdGFzA
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAZ-Jt-0zl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Exposiciones" id="0Lg-pu-sh7"/>
                 </viewController>
@@ -428,7 +428,7 @@ CEFnZW5kYSBkZSB2aXNpdGFzA
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0C7-lo-GrT">
                                 <rect key="frame" x="32" y="462" width="350" height="300"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="WCD-ta-TsB"/>
                                     <constraint firstAttribute="height" constant="300" id="ny9-Iz-6Hn"/>
@@ -438,7 +438,7 @@ CEFnZW5kYSBkZSB2aXNpdGFzA
 El subtexto de la exposición es relevante al momento que estamos todos viviendo e incita a reflexionar sobre las maneras en las cuales los eventos de actualidad informan el trabajo creativo de artistas reconocidos mundialmente.
 
 </string>
-                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -468,7 +468,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4xh-LR-QWo"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="jhR-tj-MSb" firstAttribute="centerX" secondItem="aiI-he-Fcj" secondAttribute="centerX" id="0jf-bi-Vxu"/>
                             <constraint firstItem="OSl-wk-8cb" firstAttribute="top" secondItem="GNa-qD-Wfh" secondAttribute="bottom" constant="18" id="5eN-BB-Zi0"/>
@@ -694,15 +694,15 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mca-Eb-8tj">
                                 <rect key="frame" x="32" y="462" width="350" height="320"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="Jkt-Pc-iNi"/>
                                     <constraint firstAttribute="height" constant="300" id="dI0-2g-RLN"/>
                                 </constraints>
-                                <mutableString key="text">En esta muestra curada por Taiyana Pimentel, se establece un paralelismo entre las prácticas posconceptuales y de inmersión en la construcción histórica por la que se ha conocido a García Torres, con los inicios de sus estrategias estéticas en las ciudades de Monterrey y México; se analiza a través de obras tempranas, las connotaciones del sentido del espacio y del paisaje nacidos tempranamente en la ciudad que le acogió en su época de formación y que son conceptos que lo han acompañado en su práctica artística posterior. Con base en esta premisa, se podrán apreciar obras como la pintura Cerro de la Silla, 1998 y el video Open Letter to Dr. Atl, 2005, realizado en Guadalajara.
+                                <string key="text">En esta muestra curada por Taiyana Pimentel, se establece un paralelismo entre las prácticas posconceptuales y de inmersión en la construcción histórica por la que se ha conocido a García Torres, con los inicios de sus estrategias estéticas en las ciudades de Monterrey y México; se analiza a través de obras tempranas, las connotaciones del sentido del espacio y del paisaje nacidos tempranamente en la ciudad que le acogió en su época de formación y que son conceptos que lo han acompañado en su práctica artística posterior. Con base en esta premisa, se podrán apreciar obras como la pintura Cerro de la Silla, 1998 y el video Open Letter to Dr. Atl, 2005, realizado en Guadalajara.
 
-La poética del regreso …</mutableString>
-                                <color key="textColor" systemColor="secondaryLabelColor"/>
+La poética del regreso …</string>
+                                <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -732,7 +732,7 @@ La poética del regreso …</mutableString>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PPu-gE-16L"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ACx-7X-6Q8" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="35" id="1F3-NN-TD9"/>
                             <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="9VM-df-qM8" secondAttribute="trailing" constant="35" id="3Dr-Yr-VU6"/>
@@ -776,8 +776,8 @@ La poética del regreso …</mutableString>
         <image name="Web capture_8-9-2021_225816_www.marco.org.mx" width="2628" height="1437"/>
         <image name="img_24787" width="980" height="980"/>
         <image name="map" catalog="system" width="128" height="110"/>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
