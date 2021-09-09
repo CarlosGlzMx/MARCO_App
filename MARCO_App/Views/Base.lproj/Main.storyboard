@@ -42,7 +42,7 @@
                                 <state key="normal" title="INICIAR SESIÓN"/>
                                 <connections>
                                     <action selector="loggedIn:" destination="6pN-co-r7D" eventType="touchUpInside" id="PBA-48-9ky"/>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="AQ5-EW-9sY"/>
+                                    <segue destination="Tsq-fw-yA9" kind="presentation" modalPresentationStyle="fullScreen" id="AQ5-EW-9sY"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_24787" translatesAutoresizingMaskIntoConstraints="NO" id="ryI-j3-ftF">
@@ -120,7 +120,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="edC-sG-gzM" kind="show" id="reX-VO-aTe"/>
+                                    <segue destination="LQq-i9-7JR" kind="show" id="SNz-QH-bHB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
@@ -135,7 +135,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="i4Y-aU-Y9g" kind="show" id="pbg-vK-kFc"/>
+                                    <segue destination="7Bx-62-fPa" kind="show" id="jjS-cO-aWm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
@@ -150,7 +150,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="t3C-1q-Cp9" kind="show" id="Hq8-dW-CJb"/>
+                                    <segue destination="DrK-Oh-Oym" kind="show" id="9PY-zA-qVa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
@@ -215,22 +215,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+            <point key="canvasLocation" x="1849.2753623188407" y="88.392857142857139"/>
         </scene>
         <!--Agendar Visitas-->
         <scene sceneID="6IF-Nj-GIF">
             <objects>
                 <viewController title="Agendar Visitas" id="7Bx-62-fPa" customClass="ReservacionViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zZX-2e-dBN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="qtL-Dj-rgE">
-                                <rect key="frame" x="20" y="156" width="374" height="160"/>
+                                <rect key="frame" x="20" y="188" width="374" height="182"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </datePicker>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de Visitantes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SzF-p7-aaj">
-                                <rect key="frame" x="20" y="545" width="374" height="34"/>
+                                <rect key="frame" x="20" y="599" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="3Rx-4r-Lt3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="mbX-s6-ROU"/>
@@ -239,7 +239,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE4-5a-8Kp">
-                                <rect key="frame" x="20" y="416" width="374" height="34"/>
+                                <rect key="frame" x="20" y="470" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="2Gt-sB-OI3"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="9gr-ew-WsM"/>
@@ -248,7 +248,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lwr-Lk-6bl">
-                                <rect key="frame" x="50" y="599" width="314" height="30"/>
+                                <rect key="frame" x="50" y="653" width="314" height="30"/>
                                 <color key="backgroundColor" red="0.85526383399999995" green="0.0" blue="0.57960849739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="JQx-Wl-vBG"/>
@@ -260,7 +260,7 @@
                                 </state>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-jr-DfQ">
-                                <rect key="frame" x="20" y="491" width="374" height="34"/>
+                                <rect key="frame" x="20" y="545" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ctx-1G-qVx"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="34" id="cuX-0E-viD"/>
@@ -305,60 +305,71 @@ CEFnZW5kYSBkZSB2aXNpdGFzA
             <objects>
                 <viewController id="LQq-i9-7JR" customClass="exposicionesViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z16-rk-bNM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o3-xQ-vsg">
-                                <rect key="frame" x="30" y="186" width="159" height="140"/>
+                                <rect key="frame" x="34" y="336" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="Poetica del regreso" backgroundImage="Obra1"/>
                                 <connections>
-                                    <segue destination="JIc-lw-GJs" kind="show" id="SYv-YN-sRv"/>
+                                    <segue destination="JIc-lw-GJs" kind="showDetail" id="SYv-YN-sRv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-n4-oNv">
-                                <rect key="frame" x="30" y="357" width="159" height="140"/>
+                                <rect key="frame" x="34" y="507" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" backgroundImage="Proximamente2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-jR-Tou">
-                                <rect key="frame" x="218" y="186" width="159" height="140"/>
+                                <rect key="frame" x="222" y="336" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="16"/>
                                 <state key="normal" title="Exhibiciones_Index" backgroundImage="Obra2"/>
                                 <connections>
-                                    <segue destination="U71-pP-wRV" kind="show" id="Cdi-ko-CCc"/>
+                                    <segue destination="U71-pP-wRV" kind="showDetail" id="Cdi-ko-CCc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJq-J9-rl6">
-                                <rect key="frame" x="218" y="357" width="159" height="140"/>
+                                <rect key="frame" x="222" y="507" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" backgroundImage="Proximamente2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mh4-1l-Vsb">
-                                <rect key="frame" x="30" y="528" width="159" height="140"/>
+                                <rect key="frame" x="34" y="678" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" backgroundImage="Proximamente2"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3y-v5-DZg">
-                                <rect key="frame" x="218" y="528" width="159" height="140"/>
+                                <rect key="frame" x="222" y="678" width="159" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
                                 <state key="normal" backgroundImage="Proximamente2"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1" translatesAutoresizingMaskIntoConstraints="NO" id="fND-87-mZY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="15H-eM-DtN"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAZ-Jt-0zl"/>
                         <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="fND-87-mZY" firstAttribute="top" secondItem="YAZ-Jt-0zl" secondAttribute="top" id="Blx-Oc-Yih"/>
+                            <constraint firstItem="fND-87-mZY" firstAttribute="leading" secondItem="YAZ-Jt-0zl" secondAttribute="leading" id="Isa-jF-VhK"/>
+                            <constraint firstItem="YAZ-Jt-0zl" firstAttribute="trailing" secondItem="fND-87-mZY" secondAttribute="trailing" id="qVK-EV-OA8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exposiciones" id="0Lg-pu-sh7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yw-Zo-zFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2800" y="866.51785714285711"/>
+            <point key="canvasLocation" x="2798.5507246376815" y="866.51785714285711"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vjc-OX-5zO">
@@ -504,16 +515,16 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
             </objects>
             <point key="canvasLocation" x="3595.652173913044" y="866.51785714285711"/>
         </scene>
-        <!--Restaurante View Controller-->
+        <!--Reserva en Restaurante-->
         <scene sceneID="rGF-hn-w7w">
             <objects>
                 <viewController id="DrK-Oh-Oym" customClass="restauranteViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQQ-Hb-pzP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeI-b8-aJK">
-                                <rect key="frame" x="20" y="472" width="374" height="34"/>
+                                <rect key="frame" x="20" y="526" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="KiK-NS-SuA"/>
                                 </constraints>
@@ -521,7 +532,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dF-iM-fx4">
-                                <rect key="frame" x="20" y="547" width="374" height="34"/>
+                                <rect key="frame" x="20" y="601" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="dwS-z6-JAi"/>
                                 </constraints>
@@ -529,7 +540,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Numero de Visitantes" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klG-in-FEU">
-                                <rect key="frame" x="20" y="601" width="374" height="34"/>
+                                <rect key="frame" x="20" y="655" width="374" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ijv-ry-x8z"/>
                                 </constraints>
@@ -537,7 +548,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGc-i6-zOb">
-                                <rect key="frame" x="50" y="655" width="314" height="30"/>
+                                <rect key="frame" x="50" y="709" width="314" height="30"/>
                                 <color key="backgroundColor" red="0.85526383399999995" green="0.0" blue="0.57960849739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="p2H-Wn-t8q"/>
@@ -548,7 +559,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 </state>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Sq-tHh">
-                                <rect key="frame" x="20" y="156" width="374" height="216"/>
+                                <rect key="frame" x="20" y="188" width="374" height="238"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </datePicker>
                         </subviews>
@@ -573,68 +584,11 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                             <constraint firstItem="qCd-1U-XID" firstAttribute="bottom" secondItem="uGc-i6-zOb" secondAttribute="bottom" constant="123" id="ym9-UR-Sm5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5kh-tg-2IT"/>
+                    <navigationItem key="navigationItem" title="Reserva en Restaurante" id="5kh-tg-2IT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mY3-6T-sg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2723.1884057971015" y="87.723214285714278"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="IYU-QQ-6x8">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3C-1q-Cp9" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="x4e-iF-cjC"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hVd-Zd-AMO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="DrK-Oh-Oym" kind="relationship" relationship="rootViewController" id="4bt-Pn-6wY"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xd2-Is-M4c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1813.0434782608697" y="87.723214285714278"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="yxb-mY-5Pi">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i4Y-aU-Y9g" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="KoL-hz-3r9"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DJL-2r-VaC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7Bx-62-fPa" kind="relationship" relationship="rootViewController" id="a54-Bm-zcN"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yMY-8g-xay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="25" y="796"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="i2m-XV-N4d">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edC-sG-gzM" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="VMW-3P-j1l"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xHR-AO-Wz1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="LQq-i9-7JR" kind="relationship" relationship="rootViewController" id="a8g-wt-mJC"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bh6-b9-Xd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1889.8550724637682" y="866.51785714285711"/>
+            <point key="canvasLocation" x="3633.3333333333335" y="87.723214285714278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="iOH-hl-kC4">
@@ -766,12 +720,31 @@ La poética del regreso …</string>
             </objects>
             <point key="canvasLocation" x="2798.5507246376815" y="1559.5982142857142"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fxt-eF-cYA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tsq-fw-yA9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HJV-kQ-L9y">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="p4O-SS-pnE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbK-4x-5BR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1586893659313" width="200" height="200"/>
         <image name="Galeria-Index-20-800x533" width="800" height="533"/>
         <image name="Obra1" width="1079" height="875"/>
         <image name="Obra2" width="1200" height="800"/>
+        <image name="Picture1" width="974" height="433"/>
         <image name="Proximamente2" width="820" height="561"/>
         <image name="Web capture_8-9-2021_225816_www.marco.org.mx" width="2628" height="1437"/>
         <image name="img_24787" width="980" height="980"/>
