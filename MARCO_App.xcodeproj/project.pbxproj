@@ -20,6 +20,7 @@
 		CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */; };
 		CB79BAF426D5B2A3002EBF04 /* MARCO_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAF326D5B2A3002EBF04 /* MARCO_AppTests.swift */; };
 		CB79BAFF26D5B2A3002EBF04 /* MARCO_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */; };
+		CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */; };
 		EA26C50626D5E20E000553C8 /* restauranteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26C50526D5E20E000553C8 /* restauranteViewController.swift */; };
 		EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26C50726D5E261000553C8 /* exposicionesViewController.swift */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
@@ -67,6 +68,7 @@
 		CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppUITests.swift; sourceTree = "<group>"; };
 		CB79BB0026D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservacionViewController.swift; sourceTree = "<group>"; };
 		EA26C50526D5E20E000553C8 /* restauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restauranteViewController.swift; sourceTree = "<group>"; };
 		EA26C50726D5E261000553C8 /* exposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesViewController.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				EA26C50726D5E261000553C8 /* exposicionesViewController.swift */,
 				EAFA333A26E80AF10072D0AC /* ObraViewController.swift */,
 				6F22D8E826E8581A00B287E8 /* LoginViewController.swift */,
+				CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			files = (
 				6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */,
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
+				CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */,
 				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
 				EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */,
