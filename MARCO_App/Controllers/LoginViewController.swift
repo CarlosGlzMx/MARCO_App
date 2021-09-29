@@ -32,13 +32,13 @@ class LoginViewController: UIViewController {
             return
         }
         
-        Auth.auth().createUser(withEmail: email, password: password) {
+        Auth.auth().signIn(withEmail: email, password: password) {
             authResult, error in
             if error != nil {
                 print(error!)
             }
             else {
-                print("Usuario registrado \(authResult?.user.uid ?? "")")
+                print("Correcto inicio de sesión \(authResult?.user.uid ?? "")")
             }
         }
     }
