@@ -9,13 +9,33 @@ import UIKit
 
 class exposicionesViewController: UIViewController {
 
+    var exposiciones: [Exposicion] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         title = "Exposiciones"
+        
+        
+        fetch()
         // Do any additional setup after loading the view.
     }
     
+    func fetch(){
+        NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/expositions", method:.get , parameters: nil, stringParameters: nil) {
+            (event: [Exposicion]?, error) in
+            if error != nil
+            {
+                print(error ?? "Hubo un error misterioso")
+                
+            }
+            else{
+                guard let exposiciones = event else {return}
+                self.exposiciones = exposiciones
+                print(exposiciones)
+            }
+        }
+    }
 
     /*
     // MARK: - Navigation

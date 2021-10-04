@@ -26,6 +26,8 @@
 		EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26C50726D5E261000553C8 /* exposicionesViewController.swift */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
+		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
+		FB622388270B483500BB46D8 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622387270B483500BB46D8 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +71,14 @@
 		CB79BAFA26D5B2A3002EBF04 /* MARCO_AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARCO_AppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARCO_AppUITests.swift; sourceTree = "<group>"; };
 		CB79BB0026D5B2A3002EBF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBBC48EA2704AE9700EECC21 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservacionViewController.swift; sourceTree = "<group>"; };
 		EA26C50526D5E20E000553C8 /* restauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restauranteViewController.swift; sourceTree = "<group>"; };
 		EA26C50726D5E261000553C8 /* exposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesViewController.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		FB622385270B475300BB46D8 /* ExposicionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExposicionModel.swift; sourceTree = SOURCE_ROOT; };
+		FB622387270B483500BB46D8 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FD87AACA823D17F10E4F6EE6 /* Pods_MARCO_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARCO_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -161,6 +164,7 @@
 				CB79BB0C26D5B2F1002EBF04 /* Models */,
 				CB79BADC26D5B291002EBF04 /* AppDelegate.swift */,
 				CB79BADE26D5B291002EBF04 /* SceneDelegate.swift */,
+				FB622387270B483500BB46D8 /* Network.swift */,
 				CB79BAE526D5B2A3002EBF04 /* Assets.xcassets */,
 				CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */,
 				CB79BAEA26D5B2A3002EBF04 /* Info.plist */,
@@ -189,6 +193,7 @@
 		CB79BB0C26D5B2F1002EBF04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FB622385270B475300BB46D8 /* ExposicionModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -457,12 +462,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBC48EB2704AE9700EECC21 /* SignupViewController.swift in Sources */,
+				FB622388270B483500BB46D8 /* Network.swift in Sources */,
 				6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */,
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
 				CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */,
 				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
+				FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */,
 				EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */,
 				EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */,
 				EA26C50626D5E20E000553C8 /* restauranteViewController.swift in Sources */,
