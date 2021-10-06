@@ -47,6 +47,9 @@
                     <state key="normal" title="Recorrido Virtual">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="recorridoBtn:" destination="-1" eventType="touchUpInside" id="tgd-16-4Hi"/>
+                    </connections>
                 </button>
                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pds-eQ-SfA">
                     <rect key="frame" x="43" y="418" width="344" height="32"/>
@@ -78,11 +81,11 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
-                    <rect key="frame" x="40" y="464" width="350" height="300"/>
+                    <rect key="frame" x="40" y="464" width="350" height="310"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="350" id="GpA-h2-o4h"/>
-                        <constraint firstAttribute="height" constant="300" id="YaS-52-nAi"/>
+                        <constraint firstAttribute="height" constant="310" id="YaS-52-nAi"/>
                     </constraints>
                     <string key="text">A raíz de la fuerte crisis económica que enfrentan los museos a nivel internacional, y derivado de la necesidad de buscar nuevos posicionamientos de las producciones artísticas actuales, MARCO pensó en el patio de las esculturas como una posibilidad de generar nexos con la comunidad artística de Monterrey que se ha preocupado por buscar un lugar en el espacio institucional global. Por tal motivo, su directora Taiyana Pimentel en colaboración con los Miembros del Consejo Directivo, pensaron en este proyecto.
 
