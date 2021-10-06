@@ -27,6 +27,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         obrasGrid.register(nib, forCellWithReuseIdentifier: "obraCollectionCell")
         
         fetch()
+        
     }
     
     func fetch(){
@@ -42,6 +43,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
                 self.exposiciones = exposiciones
                 self.obrasGrid.reloadData()
                 print(exposiciones)
+                self.obrasGrid.reloadData()
             }
         }
     }
@@ -71,7 +73,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         let obra = exposiciones[indexPath.row]
         
         let obraDetailViewController = ObraViewController(nibName: "ObraViewController", bundle: nil)
-        obraDetailViewController.exposiciones = obra
+        obraDetailViewController.exposicion = obra
         
         self.navigationController?.pushViewController(obraDetailViewController, animated: true)
         

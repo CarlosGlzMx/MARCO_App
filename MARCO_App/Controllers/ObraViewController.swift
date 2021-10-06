@@ -16,11 +16,11 @@ class ObraViewController: UIViewController {
     @IBOutlet weak var obraDescription: UITextView!
     
     
-    var exposiciones : Exposicion?
+    var exposicion : Exposicion?
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    guard let obra = exposiciones else {return}
+    guard let obra = exposicion else {return}
         
 //        let urlRecorrido = URL(string: obra.recorridoVirtual)!
         obraDate.text = obra.startDate
