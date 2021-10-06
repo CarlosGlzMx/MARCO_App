@@ -55,11 +55,11 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         
         let obra = exposiciones[indexPath.row]
         let name = obra.title
-        cell.obraTitle = name
+        cell.obraTitle.text = name
         
 //        let url = URL(string: "")!
 //        cell.obraImage.downloaded(from: url)
-        cell.obraImage = UIImage(named: "Obra1")
+        cell.obraImage.image = UIImage(named: "Obra1")
         
         
         return cell
@@ -68,9 +68,9 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let obra = exposiciones[indexPath.row]
-        userDetailViewController.randomUser = user
         
         let obraDetailViewController = ObraViewController(nibName: "ObraViewController", bundle: nil)
+        obraDetailViewController.exposiciones = obra
         
         self.navigationController?.pushViewController(obraDetailViewController, animated: true)
         
