@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="obraCollectionCell" id="gTV-IL-0wX" customClass="ObraCollectionViewCell" customModule="MARCO_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oHI-Lv-Km5">
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfJ-Gc-soW">
+                        <rect key="frame" x="63" y="52" width="44.5" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="oHI-Lv-Km5" secondAttribute="bottom" id="3Iy-UM-HUc"/>
+                <constraint firstAttribute="trailing" secondItem="oHI-Lv-Km5" secondAttribute="trailing" id="8qM-9m-Eoj"/>
+                <constraint firstItem="oHI-Lv-Km5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="GDz-GD-gO3"/>
+                <constraint firstItem="MfJ-Gc-soW" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="aaZ-ok-i3l"/>
+                <constraint firstItem="oHI-Lv-Km5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vnW-Sa-NtS"/>
+                <constraint firstItem="MfJ-Gc-soW" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="vzZ-H1-EBz"/>
+            </constraints>
+            <size key="customSize" width="159" height="130"/>
+            <connections>
+                <outlet property="obraImage" destination="oHI-Lv-Km5" id="OMZ-V9-aKa"/>
+                <outlet property="obraTitle" destination="MfJ-Gc-soW" id="Krd-3b-788"/>
+            </connections>
+            <point key="canvasLocation" x="168.11594202898553" y="62.611607142857139"/>
+        </collectionViewCell>
+    </objects>
+</document>

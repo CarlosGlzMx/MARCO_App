@@ -20,10 +20,11 @@
 		CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB79BAE726D5B2A3002EBF04 /* LaunchScreen.storyboard */; };
 		CB79BAF426D5B2A3002EBF04 /* MARCO_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAF326D5B2A3002EBF04 /* MARCO_AppTests.swift */; };
 		CB79BAFF26D5B2A3002EBF04 /* MARCO_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB79BAFE26D5B2A3002EBF04 /* MARCO_AppUITests.swift */; };
-		CBBC48EB2704AE9700EECC21 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC48EA2704AE9700EECC21 /* SignupViewController.swift */; };
 		CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */; };
 		EA26C50626D5E20E000553C8 /* restauranteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26C50526D5E20E000553C8 /* restauranteViewController.swift */; };
 		EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA26C50726D5E261000553C8 /* exposicionesViewController.swift */; };
+		EA2D38DC270D00FE00ED4D7E /* ObraCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */; };
+		EA2D38DD270D00FE00ED4D7E /* ObraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
 		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
@@ -74,6 +75,8 @@
 		CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservacionViewController.swift; sourceTree = "<group>"; };
 		EA26C50526D5E20E000553C8 /* restauranteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restauranteViewController.swift; sourceTree = "<group>"; };
 		EA26C50726D5E261000553C8 /* exposicionesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exposicionesViewController.swift; sourceTree = "<group>"; };
+		EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraCollectionViewCell.xib; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +206,8 @@
 			children = (
 				CB79BAE226D5B291002EBF04 /* Main.storyboard */,
 				EAFA333B26E80AF10072D0AC /* ObraViewController.xib */,
+				EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */,
+				EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,7 +221,6 @@
 				EAFA333A26E80AF10072D0AC /* ObraViewController.swift */,
 				6F22D8E826E8581A00B287E8 /* LoginViewController.swift */,
 				CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */,
-				CBBC48EA2704AE9700EECC21 /* SignupViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -330,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA2D38DD270D00FE00ED4D7E /* ObraCollectionViewCell.xib in Resources */,
 				CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */,
 				CB79BAE626D5B2A3002EBF04 /* Assets.xcassets in Resources */,
 				EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */,
@@ -471,6 +476,7 @@
 				FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */,
 				EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */,
 				EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */,
+				EA2D38DC270D00FE00ED4D7E /* ObraCollectionViewCell.swift in Sources */,
 				EA26C50626D5E20E000553C8 /* restauranteViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

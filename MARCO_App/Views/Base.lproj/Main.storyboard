@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -484,30 +484,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1o3-xQ-vsg">
-                                <rect key="frame" x="30" y="382" width="160" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="2Lo-HZ-TB8"/>
-                                    <constraint firstAttribute="height" constant="160" id="KlL-7a-38A"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="14"/>
-                                <state key="normal" title="Poetica del regreso" backgroundImage="Obra1"/>
-                                <connections>
-                                    <segue destination="JIc-lw-GJs" kind="showDetail" id="SYv-YN-sRv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLT-jR-Tou">
-                                <rect key="frame" x="224" y="382" width="160" height="160"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="Kbk-34-jdl"/>
-                                    <constraint firstAttribute="height" constant="160" id="mSw-CV-LPV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="13"/>
-                                <state key="normal" title="Exhibiciones_Index" backgroundImage="Obra2"/>
-                                <connections>
-                                    <segue destination="U71-pP-wRV" kind="showDetail" id="Cdi-ko-CCc"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Picture1" translatesAutoresizingMaskIntoConstraints="NO" id="fND-87-mZY">
                                 <rect key="frame" x="0.0" y="88" width="414" height="184"/>
                                 <constraints>
@@ -524,58 +500,57 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-n4-oNv">
-                                <rect key="frame" x="34" y="574" width="159" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" backgroundImage="Proximamente2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SJq-J9-rl6">
-                                <rect key="frame" x="222" y="574" width="159" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" backgroundImage="Proximamente2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mh4-1l-Vsb">
-                                <rect key="frame" x="34" y="722" width="159" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" backgroundImage="Proximamente2"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3y-v5-DZg">
-                                <rect key="frame" x="222" y="722" width="159" height="140"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
-                                <state key="normal" backgroundImage="Proximamente2"/>
-                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-mO-HVK">
+                                <rect key="frame" x="0.0" y="362" width="414" height="534"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uiy-xu-6gv">
+                                    <size key="itemSize" width="170" height="125"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jRI-gN-liA">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IHz-Ml-rXg">
+                                            <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAZ-Jt-0zl"/>
                         <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="YAZ-Jt-0zl" firstAttribute="trailing" secondItem="oLT-jR-Tou" secondAttribute="trailing" constant="30" id="28f-Xt-iBd"/>
                             <constraint firstItem="fND-87-mZY" firstAttribute="top" secondItem="YAZ-Jt-0zl" secondAttribute="top" id="Blx-Oc-Yih"/>
                             <constraint firstItem="YAZ-Jt-0zl" firstAttribute="trailing" secondItem="0Aj-is-SLV" secondAttribute="trailing" id="E25-Kw-gjR"/>
                             <constraint firstItem="fND-87-mZY" firstAttribute="leading" secondItem="YAZ-Jt-0zl" secondAttribute="leading" id="Isa-jF-VhK"/>
-                            <constraint firstItem="1o3-xQ-vsg" firstAttribute="top" secondItem="0Aj-is-SLV" secondAttribute="bottom" constant="30" id="RXe-6V-8iG"/>
-                            <constraint firstItem="1o3-xQ-vsg" firstAttribute="leading" secondItem="YAZ-Jt-0zl" secondAttribute="leading" constant="30" id="VMI-bZ-8fi"/>
+                            <constraint firstAttribute="bottom" secondItem="8fs-mO-HVK" secondAttribute="bottom" id="Kra-VT-njH"/>
                             <constraint firstItem="0Aj-is-SLV" firstAttribute="leading" secondItem="YAZ-Jt-0zl" secondAttribute="leading" id="X2y-7w-G9J"/>
                             <constraint firstItem="0Aj-is-SLV" firstAttribute="top" secondItem="fND-87-mZY" secondAttribute="bottom" id="beT-A1-5lj"/>
-                            <constraint firstItem="oLT-jR-Tou" firstAttribute="top" secondItem="0Aj-is-SLV" secondAttribute="bottom" constant="30" id="hgP-zi-ZNK"/>
+                            <constraint firstItem="8fs-mO-HVK" firstAttribute="top" secondItem="0Aj-is-SLV" secondAttribute="bottom" constant="10" id="ew1-it-KCf"/>
+                            <constraint firstItem="8fs-mO-HVK" firstAttribute="leading" secondItem="YAZ-Jt-0zl" secondAttribute="leading" id="jsb-uu-YhA"/>
+                            <constraint firstItem="8fs-mO-HVK" firstAttribute="trailing" secondItem="YAZ-Jt-0zl" secondAttribute="trailing" id="nV2-j7-n35"/>
                             <constraint firstItem="YAZ-Jt-0zl" firstAttribute="trailing" secondItem="fND-87-mZY" secondAttribute="trailing" id="qVK-EV-OA8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Exposiciones" id="0Lg-pu-sh7"/>
+                    <connections>
+                        <outlet property="obrasGrid" destination="8fs-mO-HVK" id="9dv-RJ-OtE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yw-Zo-zFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="824"/>
+            <point key="canvasLocation" x="937.68115942028987" y="823.66071428571422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vjc-OX-5zO">
             <objects>
                 <viewController id="U71-pP-wRV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aiI-he-Fcj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Galeria-Index-20-800x533" translatesAutoresizingMaskIntoConstraints="NO" id="GNa-qD-Wfh">
@@ -839,35 +814,35 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
             <objects>
                 <viewController id="JIc-lw-GJs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivv-Pd-3Xz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Web capture_8-9-2021_225816_www.marco.org.mx" translatesAutoresizingMaskIntoConstraints="NO" id="4IK-aF-RcF">
-                                <rect key="frame" x="-9" y="0.0" width="431" height="287"/>
+                                <rect key="frame" x="-9" y="44" width="431" height="287"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="287" id="3LW-S7-ueq"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMs-lE-Tks">
-                                <rect key="frame" x="47" y="294" width="29" height="30"/>
+                                <rect key="frame" x="47" y="338" width="29" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-fz-S7A">
-                                <rect key="frame" x="201" y="299" width="12" height="30"/>
+                                <rect key="frame" x="201" y="343" width="12" height="30"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="marzo 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-Oe-1hj">
-                                <rect key="frame" x="78" y="305" width="80.5" height="18"/>
+                                <rect key="frame" x="78" y="349" width="80.5" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La poética del Regreso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8X-Jz-pjD">
-                                <rect key="frame" x="27" y="342" width="360" height="50"/>
+                                <rect key="frame" x="27" y="386" width="360" height="50"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="bXT-q0-4ja"/>
@@ -877,7 +852,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-7X-6Q8">
-                                <rect key="frame" x="35" y="414" width="344" height="32"/>
+                                <rect key="frame" x="35" y="458" width="344" height="42"/>
                                 <segments>
                                     <segment title="Descripción"/>
                                     <segment title="Galería"/>
@@ -885,7 +860,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                                 </segments>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mca-Eb-8tj">
-                                <rect key="frame" x="32" y="462" width="350" height="320"/>
+                                <rect key="frame" x="32" y="516" width="350" height="320"/>
                                 <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="Exv-0z-o3T"/>
@@ -898,7 +873,7 @@ La poética del regreso …</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khc-SA-PPL">
-                                <rect key="frame" x="39" y="790" width="150" height="30"/>
+                                <rect key="frame" x="39" y="844" width="150" height="30"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="66c-xz-Na3"/>
@@ -910,7 +885,7 @@ La poética del regreso …</string>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-df-qM8">
-                                <rect key="frame" x="229" y="790" width="150" height="30"/>
+                                <rect key="frame" x="229" y="844" width="150" height="30"/>
                                 <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QfG-LY-yOO"/>
@@ -981,10 +956,7 @@ La poética del regreso …</string>
     <resources>
         <image name="1586893659313" width="200" height="200"/>
         <image name="Galeria-Index-20-800x533" width="800" height="533"/>
-        <image name="Obra1" width="1079" height="875"/>
-        <image name="Obra2" width="1200" height="800"/>
         <image name="Picture1" width="974" height="433"/>
-        <image name="Proximamente2" width="820" height="561"/>
         <image name="Web capture_8-9-2021_225816_www.marco.org.mx" width="2628" height="1437"/>
         <image name="img_24787" width="980" height="980"/>
         <image name="map" catalog="system" width="128" height="110"/>
