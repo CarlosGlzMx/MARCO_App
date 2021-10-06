@@ -22,7 +22,7 @@ class ObraViewController: UIViewController {
 
     guard let obra = exposiciones else {return}
         
-        let urlRecorrido = URL(string: obra.recorridoVirtual)!
+//        let urlRecorrido = URL(string: obra.recorridoVirtual)!
         obraDate.text = obra.startDate
         obraTitle.text = obra.title
         //obraDescription.text = obra.description
@@ -37,7 +37,10 @@ class ObraViewController: UIViewController {
     }*/
     
     @IBAction func recorridoBtn(_ sender: Any) {
-        if let url = 
+//        if let url =
+        let viewController = RecorridoViewController(nibName: "RecorridoViewController", bundle: nil)
+        viewController.recorridoUrl = exposiciones?.recorridoVirtual
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     

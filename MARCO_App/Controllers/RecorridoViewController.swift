@@ -16,10 +16,10 @@ class RecorridoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        guard let recorrido = recorridoUrl, !recorrido.isEmpty else {return}
+        guard let url = URL(string: recorrido) else {return}
         
-        guard let url = URL(string: recorridoUrl), !url.isEmpty else {return}
-        
-        recorridoWebView.load(URLRequest(url: url)!)
+        recorridoWebView.load(URLRequest(url: url))
     }
 
 
