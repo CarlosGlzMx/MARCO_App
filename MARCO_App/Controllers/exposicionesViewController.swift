@@ -21,11 +21,12 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         obrasGrid.delegate = self
         obrasGrid.dataSource = self
         
-        fetch()
         
         let nib = UINib(nibName: "ObraCollectionViewCell", bundle: nil)
         
         obrasGrid.register(nib, forCellWithReuseIdentifier: "obraCollectionCell")
+        
+        fetch()
     }
     
     func fetch(){
@@ -62,6 +63,17 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let obra = exposiciones[indexPath.row]
+        userDetailViewController.randomUser = user
+        
+        let obraDetailViewController = ObraViewController(nibName: "ObraViewController", bundle: nil)
+        
+        self.navigationController?.pushViewController(obraDetailViewController, animated: true)
+        
     }
 
    

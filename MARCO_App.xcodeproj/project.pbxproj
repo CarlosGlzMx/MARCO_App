@@ -206,7 +206,6 @@
 			children = (
 				CB79BAE226D5B291002EBF04 /* Main.storyboard */,
 				EAFA333B26E80AF10072D0AC /* ObraViewController.xib */,
-				EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */,
 				EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */,
 			);
 			path = Views;
@@ -219,6 +218,7 @@
 				EA26C50526D5E20E000553C8 /* restauranteViewController.swift */,
 				EA26C50726D5E261000553C8 /* exposicionesViewController.swift */,
 				EAFA333A26E80AF10072D0AC /* ObraViewController.swift */,
+				EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */,
 				6F22D8E826E8581A00B287E8 /* LoginViewController.swift */,
 				CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */,
 			);
