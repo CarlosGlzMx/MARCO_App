@@ -39,7 +39,7 @@ class ObraViewController: UIViewController {
     @IBAction func recorridoBtn(_ sender: Any) {
 //        if let url =
         let viewController = RecorridoViewController(nibName: "RecorridoViewController", bundle: nil)
-        viewController.recorridoUrl = exposiciones?.recorridoVirtual
+        viewController.recorridoUrl = exposicion?.recorridoVirtual
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
