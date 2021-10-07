@@ -12,6 +12,8 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
     var exposiciones: [Exposicion] = []
     
     @IBOutlet weak var obrasGrid: UICollectionView!
+    var estimateWidth = 160.0
+    var cellMarginSize = 16.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +78,21 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         self.navigationController?.pushViewController(obraDetailViewController, animated: true)
         
     }
-
-   
+    
+    
 }
+
+//extension exposicionesViewController: UICollectionViewDelegateFlowLayout{
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//
+//    }
+//
+//    func calculateWith() -> CGFloat{
+//        let estimateWidth = CGFloat(estimateWidth)
+//        let cellCount = floor(CGFloat(self.view.frame.size.width) / estimateWidth)
+//        let margin = CGFloat(cellMarginSize * 2)
+//        let width = self.view.frame.size.width - CGFloat(ce)
+//    }
+//
+//
+//}

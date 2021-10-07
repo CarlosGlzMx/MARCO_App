@@ -19,7 +19,7 @@ struct ExpoList: Codable {
 
 // MARK: - WelcomeElement
 struct Exposicion: Codable {
-    let id, title, startDate: String?
+    let id, title, startDate, description: String?
     let cerraduria, museografia, salas, tecnica: String?
     let obras: String?
     let recorridoVirtual, videoURL: String?

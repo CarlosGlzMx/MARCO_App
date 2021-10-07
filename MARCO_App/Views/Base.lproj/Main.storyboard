@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="Kex-nV-7pD">
             <objects>
-                <viewController id="6pN-co-r7D" customClass="LoginViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6pN-co-r7D" customClass="LoginViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RhH-qb-6fL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,7 +244,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,23 +503,42 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-mO-HVK">
                                 <rect key="frame" x="0.0" y="362" width="414" height="534"/>
                                 <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uiy-xu-6gv">
-                                    <size key="itemSize" width="170" height="125"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="uiy-xu-6gv">
+                                    <size key="itemSize" width="185" height="125"/>
+                                    <size key="headerReferenceSize" width="5" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jRI-gN-liA">
-                                        <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="185" height="125"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="IHz-Ml-rXg">
-                                            <rect key="frame" x="0.0" y="0.0" width="170" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="185" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="O8m-yh-7I5">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzX-Ld-D7t">
+                                <rect key="frame" x="0.0" y="501" width="185" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="La poética del Regreso Mario García Torres" backgroundImage="Obra1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4Q-EF-3DW">
+                                <rect key="frame" x="229" y="500" width="185" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="La poética del Regreso Mario García Torres" backgroundImage="Obra1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAZ-Jt-0zl"/>
                         <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -809,131 +828,6 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
             </objects>
             <point key="canvasLocation" x="2740.579710144928" y="823.66071428571422"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="iOH-hl-kC4">
-            <objects>
-                <viewController id="JIc-lw-GJs" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ivv-Pd-3Xz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Web capture_8-9-2021_225816_www.marco.org.mx" translatesAutoresizingMaskIntoConstraints="NO" id="4IK-aF-RcF">
-                                <rect key="frame" x="-9" y="44" width="431" height="287"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="287" id="3LW-S7-ueq"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EMs-lE-Tks">
-                                <rect key="frame" x="47" y="338" width="29" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pd-fz-S7A">
-                                <rect key="frame" x="201" y="343" width="12" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="marzo 2021" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Je-Oe-1hj">
-                                <rect key="frame" x="78" y="349" width="80.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La poética del Regreso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F8X-Jz-pjD">
-                                <rect key="frame" x="27" y="386" width="360" height="50"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bXT-q0-4ja"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ACx-7X-6Q8">
-                                <rect key="frame" x="35" y="458" width="344" height="42"/>
-                                <segments>
-                                    <segment title="Descripción"/>
-                                    <segment title="Galería"/>
-                                    <segment title="Recomendados"/>
-                                </segments>
-                            </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mca-Eb-8tj">
-                                <rect key="frame" x="32" y="516" width="350" height="320"/>
-                                <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="320" id="Exv-0z-o3T"/>
-                                </constraints>
-                                <string key="text">En esta muestra curada por Taiyana Pimentel, se establece un paralelismo entre las prácticas posconceptuales y de inmersión en la construcción histórica por la que se ha conocido a García Torres, con los inicios de sus estrategias estéticas en las ciudades de Monterrey y México; se analiza a través de obras tempranas, las connotaciones del sentido del espacio y del paisaje nacidos tempranamente en la ciudad que le acogió en su época de formación y que son conceptos que lo han acompañado en su práctica artística posterior. Con base en esta premisa, se podrán apreciar obras como la pintura Cerro de la Silla, 1998 y el video Open Letter to Dr. Atl, 2005, realizado en Guadalajara.
-
-La poética del regreso …</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="khc-SA-PPL">
-                                <rect key="frame" x="39" y="844" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="66c-xz-Na3"/>
-                                    <constraint firstAttribute="height" constant="30" id="wPa-Oj-gjj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Comprar Boletos">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-df-qM8">
-                                <rect key="frame" x="229" y="844" width="150" height="30"/>
-                                <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="QfG-LY-yOO"/>
-                                    <constraint firstAttribute="width" constant="150" id="bAc-HJ-9NK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Recorrido Virtual">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="PPu-gE-16L"/>
-                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="mca-Eb-8tj" firstAttribute="top" secondItem="ACx-7X-6Q8" secondAttribute="bottom" constant="17" id="0D6-i4-2FC"/>
-                            <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="mca-Eb-8tj" secondAttribute="trailing" constant="32" id="1qF-8B-slE"/>
-                            <constraint firstItem="khc-SA-PPL" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="39" id="2ET-k0-3RF"/>
-                            <constraint firstItem="ACx-7X-6Q8" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="35" id="2Yf-Nl-9dF"/>
-                            <constraint firstItem="4IK-aF-RcF" firstAttribute="top" secondItem="PPu-gE-16L" secondAttribute="top" id="4Ku-Ru-RzI"/>
-                            <constraint firstItem="ACx-7X-6Q8" firstAttribute="top" secondItem="F8X-Jz-pjD" secondAttribute="bottom" constant="22" id="604-2H-SDo"/>
-                            <constraint firstAttribute="bottom" secondItem="khc-SA-PPL" secondAttribute="bottom" constant="22" id="BIH-gU-glI"/>
-                            <constraint firstItem="EMs-lE-Tks" firstAttribute="top" secondItem="4IK-aF-RcF" secondAttribute="bottom" constant="7" id="Iuk-SO-Wnr"/>
-                            <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="F8X-Jz-pjD" secondAttribute="trailing" constant="27" id="LpO-J2-Rbt"/>
-                            <constraint firstItem="9VM-df-qM8" firstAttribute="leading" secondItem="khc-SA-PPL" secondAttribute="trailing" constant="40" id="NCd-ZK-iya"/>
-                            <constraint firstItem="0pd-fz-S7A" firstAttribute="leading" secondItem="0Je-Oe-1hj" secondAttribute="trailing" constant="42.5" id="Pqm-JB-eJj"/>
-                            <constraint firstAttribute="bottom" secondItem="9VM-df-qM8" secondAttribute="bottom" constant="22" id="VO8-6a-2Hz"/>
-                            <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="ACx-7X-6Q8" secondAttribute="trailing" constant="35" id="VjU-3H-tWX"/>
-                            <constraint firstItem="F8X-Jz-pjD" firstAttribute="top" secondItem="0pd-fz-S7A" secondAttribute="bottom" constant="13" id="Wsd-el-43v"/>
-                            <constraint firstItem="mca-Eb-8tj" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="32" id="Wvm-n3-nug"/>
-                            <constraint firstItem="khc-SA-PPL" firstAttribute="top" secondItem="mca-Eb-8tj" secondAttribute="bottom" constant="8" symbolic="YES" id="ZKX-iX-AtA"/>
-                            <constraint firstItem="4IK-aF-RcF" firstAttribute="leading" secondItem="ivv-Pd-3Xz" secondAttribute="leading" constant="-9" id="cHE-jE-HIK"/>
-                            <constraint firstAttribute="trailing" secondItem="4IK-aF-RcF" secondAttribute="trailing" constant="-8" id="dIu-Vb-UTd"/>
-                            <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="9VM-df-qM8" secondAttribute="trailing" constant="35" id="fPr-aQ-Pok"/>
-                            <constraint firstItem="9VM-df-qM8" firstAttribute="top" secondItem="mca-Eb-8tj" secondAttribute="bottom" constant="8" symbolic="YES" id="ft6-YT-04w"/>
-                            <constraint firstItem="0pd-fz-S7A" firstAttribute="top" secondItem="4IK-aF-RcF" secondAttribute="bottom" constant="12" id="jlc-qn-3DR"/>
-                            <constraint firstItem="EMs-lE-Tks" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="47" id="nBU-XH-xff"/>
-                            <constraint firstItem="0Je-Oe-1hj" firstAttribute="leading" secondItem="EMs-lE-Tks" secondAttribute="trailing" constant="2" id="vgt-Yx-aLt"/>
-                            <constraint firstItem="F8X-Jz-pjD" firstAttribute="leading" secondItem="PPu-gE-16L" secondAttribute="leading" constant="27" id="y5Y-tU-7zi"/>
-                            <constraint firstItem="PPu-gE-16L" firstAttribute="trailing" secondItem="0pd-fz-S7A" secondAttribute="trailing" constant="201" id="z7X-VE-bkj"/>
-                            <constraint firstItem="0Je-Oe-1hj" firstAttribute="top" secondItem="4IK-aF-RcF" secondAttribute="bottom" constant="18" id="zCm-zz-H3l"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="UME-ir-Bvx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EwJ-sA-xGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="269.56521739130437" y="1573.6607142857142"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="fxt-eF-cYA">
             <objects>
@@ -956,8 +850,8 @@ La poética del regreso …</string>
     <resources>
         <image name="1586893659313" width="200" height="200"/>
         <image name="Galeria-Index-20-800x533" width="800" height="533"/>
+        <image name="Obra1" width="1079" height="875"/>
         <image name="Picture1" width="974" height="433"/>
-        <image name="Web capture_8-9-2021_225816_www.marco.org.mx" width="2628" height="1437"/>
         <image name="img_24787" width="980" height="980"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <systemColor name="labelColor">

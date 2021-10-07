@@ -25,16 +25,10 @@ class ObraViewController: UIViewController {
 //        let urlRecorrido = URL(string: obra.recorridoVirtual)!
         obraDate.text = obra.startDate
         obraTitle.text = obra.title
-        //obraDescription.text = obra.description
+        obraDescription.text = obra.description
         
     }
  
-    /*
-    @IBAction func muestraUbi(_ sender: Any) {
-        if let url = URL(string: "https://maps.google.com/?cid=13510301288881986484") {
-              UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
-    }*/
     
     @IBAction func recorridoBtn(_ sender: Any) {
 //        if let url =
