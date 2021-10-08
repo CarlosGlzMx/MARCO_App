@@ -27,6 +27,8 @@
 		EA2D38DD270D00FE00ED4D7E /* ObraCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */; };
 		EA2D38E0270DE37C00ED4D7E /* RecorridoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2D38DE270DE37C00ED4D7E /* RecorridoViewController.swift */; };
 		EA2D38E1270DE37C00ED4D7E /* RecorridoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA2D38DF270DE37C00ED4D7E /* RecorridoViewController.xib */; };
+		EA3D91D1270FEFA900C89206 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D91D0270FEFA900C89206 /* SignupViewController.swift */; };
+		EA3D91D5270FF58D00C89206 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D91D4270FF58D00C89206 /* NavigationController.swift */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
 		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
@@ -81,6 +83,8 @@
 		EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraCollectionViewCell.xib; sourceTree = "<group>"; };
 		EA2D38DE270DE37C00ED4D7E /* RecorridoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorridoViewController.swift; sourceTree = "<group>"; };
 		EA2D38DF270DE37C00ED4D7E /* RecorridoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecorridoViewController.xib; sourceTree = "<group>"; };
+		EA3D91D0270FEFA900C89206 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		EA3D91D4270FF58D00C89206 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -223,10 +227,12 @@
 				EA26C50526D5E20E000553C8 /* restauranteViewController.swift */,
 				EA26C50726D5E261000553C8 /* exposicionesViewController.swift */,
 				EAFA333A26E80AF10072D0AC /* ObraViewController.swift */,
+				EA3D91D0270FEFA900C89206 /* SignupViewController.swift */,
 				EA2D38DA270D00FE00ED4D7E /* ObraCollectionViewCell.swift */,
 				6F22D8E826E8581A00B287E8 /* LoginViewController.swift */,
 				CBEFB9EA26E9AAF6005AF830 /* ReservacionViewController.swift */,
 				EA2D38DE270DE37C00ED4D7E /* RecorridoViewController.swift */,
+				EA3D91D4270FF58D00C89206 /* NavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -479,10 +485,12 @@
 				6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */,
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
 				CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */,
+				EA3D91D5270FF58D00C89206 /* NavigationController.swift in Sources */,
 				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
 				FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */,
 				EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */,
+				EA3D91D1270FEFA900C89206 /* SignupViewController.swift in Sources */,
 				EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */,
 				EA2D38DC270D00FE00ED4D7E /* ObraCollectionViewCell.swift in Sources */,
 				EA26C50626D5E20E000553C8 /* restauranteViewController.swift in Sources */,

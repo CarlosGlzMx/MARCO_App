@@ -20,6 +20,14 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueLogin" {
+            guard let NavigationController = segue.destination as?
+                    NavigationController else {return}
+            
+        }
+    }
+    
     
     @IBAction func loggedIn(_ sender: Any) {
         guard let email = emailField.text else {
@@ -38,7 +46,9 @@ class LoginViewController: UIViewController {
                 print(error!)
             }
             else {
-                print("Correcto inicio de sesión \(authResult?.user.uid ?? "")")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") 
+                self.present(vc, animated: true, completion: nil)
                 
             }
         }
