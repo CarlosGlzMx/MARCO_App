@@ -15,7 +15,11 @@ class ObraCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        obraTitle.adjustsFontSizeToFitWidth = true
+        obraTitle.minimumScaleFactor = 0.5
+      
     }
-
+    
+    
 }

@@ -30,27 +30,29 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         obrasGrid.register(nib, forCellWithReuseIdentifier: "obraCollectionCell")
         
         //SetupGrid view
-//        self.setupGridView()
+        self.setupGridView()
         
         //Obtain information from API
         fetch()
     }
     
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//
-//        self.setupGridView()
-//        DispatchQueue.main.async {
-//            self.obrasGrid.reloadData()
-//        }
-//
-//    }
-//
-//    func setupGridView(){
-//        let flow = obrasGrid?.collectionViewLayout as! UICollectionViewFlowLayout
-//        flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
-//        flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
-//    }
+    //For Layout and Grid
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+
+        self.setupGridView()
+        DispatchQueue.main.async {
+            self.obrasGrid.reloadData()
+        }
+
+    }
+    
+    //For Layout and Grid
+    func setupGridView(){
+        let flow = obrasGrid?.collectionViewLayout as! UICollectionViewFlowLayout
+        flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
+        flow.minimumLineSpacing = CGFloat(self.cellMarginSize)
+    }
     
     func fetch(){
         NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/expositions", method:.get , parameters: nil, stringParameters: nil) {
@@ -103,21 +105,22 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
     
 }
 
-//extension exposicionesViewController: UICollectionViewDelegateFlowLayout{
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        let width = self.calculateWith()
-//        return CGSize(width: width, height: width)
-//    }
-//
-//    func calculateWith() -> CGFloat{
-//        let estimateWidth = CGFloat(estimateWidth)
-//        let cellCount = floor(CGFloat(self.view.frame.size.width / estimateWidth))
-//
-//        let margin = CGFloat(cellMarginSize * 2)
-//        let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
-//
-//        return width
-//    }
-//
-//
-//}
+//For Layout
+extension exposicionesViewController: UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = self.calculateWith()
+        return CGSize(width: width, height: width)
+    }
+
+    func calculateWith() -> CGFloat{
+        let estimateWidth = CGFloat(estimateWidth)
+        let cellCount = floor(CGFloat(self.view.frame.size.width / estimateWidth))
+
+        let margin = CGFloat(cellMarginSize * 2)
+        let width = (self.view.frame.size.width - CGFloat(cellMarginSize) * (cellCount - 1) - margin) / cellCount
+
+        return width
+    }
+
+
+}
