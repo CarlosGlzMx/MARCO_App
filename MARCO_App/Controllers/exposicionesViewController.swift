@@ -37,7 +37,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         
     }
     
-    //For Layout and Grid
+    //For Layout and Grid del Collection View
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
@@ -48,7 +48,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
 
     }
     
-    //For Layout and Grid
+    //For Layout and Grid del Collection View
     func setupGridView(){
         let flow = obrasGrid?.collectionViewLayout as! UICollectionViewFlowLayout
         flow.minimumInteritemSpacing = CGFloat(self.cellMarginSize)
@@ -107,7 +107,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
     
 }
 
-//For Layout
+//For Layout and Grid del Collection View
 extension exposicionesViewController: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.calculateWith()
