@@ -22,13 +22,21 @@ class ObraViewController: UIViewController {
 
     guard let obra = exposicion else {return}
         
+//        let urlRecorrido = URL(string: obra.recorridoVirtual)!
         obraDate.text = obra.startDate
         obraTitle.text = obra.title
-        //obraDescription.text = obra.description
+        obraDescription.text = obra.description
         
     }
-
-
+ 
+    
+    @IBAction func recorridoBtn(_ sender: Any) {
+//        if let url =
+        let viewController = RecorridoViewController(nibName: "RecorridoViewController", bundle: nil)
+        viewController.recorridoUrl = exposiciones?.recorridoVirtual
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     
 
 }
