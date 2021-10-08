@@ -20,13 +20,41 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueLogin" {
-            guard let NavigationController = segue.destination as?
-                    NavigationController else {return}
-            
-        }
-    }
+//    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+//        if let ident = identifier {
+//            if ident == "segueLogin" {
+//                var check = true
+//
+//                guard let email = emailField.text else {
+//                    print("Error de email")
+//                    return false
+//                }
+//
+//                guard let password = passwordField.text else {
+//                    print("Error en contraseña")
+//                    return false
+//                }
+//
+//                    Auth.auth().signIn(withEmail: email, password: password) {
+//                        authResult, error in
+//                        if error != nil {
+//                            check = false
+//                        }
+//
+//                }
+//                return check
+//            }
+//        }
+//        return true
+//    }
+//
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "segueLogin" {
+//            guard let NavigationController = segue.destination as?
+//                    NavigationController else {return}
+//
+//        }
+//    }
     
     
     @IBAction func loggedIn(_ sender: Any) {
@@ -34,22 +62,23 @@ class LoginViewController: UIViewController {
             print("Error de email")
             return
         }
-        
+
         guard let password = passwordField.text else {
             print("Error en contraseña")
             return
         }
-        
+
         Auth.auth().signIn(withEmail: email, password: password) {
             authResult, error in
             if error != nil {
                 print(error!)
             }
             else {
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController") 
-                self.present(vc, animated: true, completion: nil)
-                
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+//                self.present(vc, animated: true, completion: nil)
+                self.performSegue(withIdentifier: "segueLogin", sender: nil)
+
             }
         }
     }

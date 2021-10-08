@@ -50,6 +50,10 @@ class SignupViewController: UIViewController {
             }
             else {
                 print("Correcto registro de usuario \(authResult?.user.uid ?? "")")
+                
+                
+                self.performSegue(withIdentifier: "segueSignUp", sender: nil)
+                
             }
         }
     }
