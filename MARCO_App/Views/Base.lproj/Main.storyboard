@@ -86,6 +86,9 @@
                                         <state key="normal" title="Regístrate">
                                             <color key="titleColor" red="0.85490196080000003" green="0.0" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="SeE-ED-r20" kind="show" id="r1i-rV-8D7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -136,7 +139,7 @@
             <objects>
                 <viewController id="SeE-ED-r20" customClass="SignupViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ySJ-O2-ZQD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1586893659313" translatesAutoresizingMaskIntoConstraints="NO" id="5Rf-OY-bKe" userLabel="Logo">
@@ -231,6 +234,7 @@
                             <constraint firstItem="hX0-xb-NLG" firstAttribute="top" secondItem="fx4-mk-QxE" secondAttribute="bottom" constant="10" id="xdU-Kz-VVO"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tN1-pX-LxO"/>
                     <connections>
                         <outlet property="emailField" destination="AqJ-Oi-Lup" id="yyf-M6-8bm"/>
                         <outlet property="pwdConfirmField" destination="ZoP-UJ-Wgv" id="ixC-hJ-Ccx"/>
@@ -244,7 +248,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -812,7 +816,7 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
         <!--Navigation Controller-->
         <scene sceneID="fxt-eF-cYA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tsq-fw-yA9" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Tsq-fw-yA9" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HJV-kQ-L9y">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

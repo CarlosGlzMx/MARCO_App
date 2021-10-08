@@ -39,10 +39,10 @@ class LoginViewController: UIViewController {
             }
             else {
                 print("Correcto inicio de sesión \(authResult?.user.uid ?? "")")
+                
             }
         }
     }
     
-
 
 }
