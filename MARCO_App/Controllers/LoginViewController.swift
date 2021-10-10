@@ -26,11 +26,13 @@ class LoginViewController: UIViewController {
     @IBAction func loggedIn(_ sender: Any) {
         guard let email = emailField.text else {
             print("Error de email")
+            displayAlert(title: "Error", message: "El email no es válido")
             return
         }
 
         guard let password = passwordField.text else {
             print("Error en contraseña")
+            displayAlert(title: "Error", message: "El password no es válido")
             return
         }
 
@@ -38,12 +40,20 @@ class LoginViewController: UIViewController {
             authResult, error in
             if error != nil {
                 print(error!)
+                self.displayAlert(title: "Error", message: "Login no valido")
             }
             else {
                 self.performSegue(withIdentifier: "segueLogin", sender: nil)
 
             }
         }
+    }
+    
+    func displayAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
     }
     
 

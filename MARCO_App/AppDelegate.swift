@@ -16,20 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        let storyboard = UIStoryboard(name:"Main",bundle: nil)
-                Auth.auth().addStateDidChangeListener() { auth,user
-                    in
-                    if user != nil {
-                        let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
-                        UIApplication.shared.windows.first?.rootViewController = vc
-                        UIApplication.shared.windows.first?.makeKeyAndVisible()
-
-                    } else {
-                        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-                        UIApplication.shared.windows.first?.rootViewController = vc
-                        UIApplication.shared.windows.first?.makeKeyAndVisible()
-                    }
-                }
+//        let storyboard = UIStoryboard(name:"Main",bundle: nil)
+//                Auth.auth().addStateDidChangeListener() { auth,user
+//                    in
+//                    if user != nil {
+//                        let vc = storyboard.instantiateViewController(withIdentifier: "MainViewController")
+//                        UIApplication.shared.windows.first?.rootViewController = vc
+//                        UIApplication.shared.windows.first?.makeKeyAndVisible()
+//
+//                    } else {
+//                        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//                        UIApplication.shared.windows.first?.rootViewController = vc
+//                        UIApplication.shared.windows.first?.makeKeyAndVisible()
+//                    }
+//                }
         return true
     }
 
