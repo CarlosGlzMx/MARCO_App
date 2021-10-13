@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pN-co-r7D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -257,10 +258,10 @@
                                 <rect key="frame" x="20" y="220" width="374" height="610"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-5z-qIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="295"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="VISITAS">
@@ -271,7 +272,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="EXPOSICIONES">
@@ -284,10 +285,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJq-sQ-rZJ">
-                                        <rect key="frame" x="0.0" y="315" width="374" height="295"/>
+                                        <rect key="frame" x="0.0" y="210" width="374" height="190"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="RESTAURANTE">
@@ -298,14 +299,38 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843137254903" green="0.20392156862745098" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="NOTICIAS">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJJ-mS-IIO"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vqT-iW-nhK">
+                                        <rect key="frame" x="0.0" y="420" width="374" height="190"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-Xk-g0S">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="EVENTOS">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-tr-xSB">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="MÁS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJJ-mS-IIO"/>
+                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeN-WK-2tA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
