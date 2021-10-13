@@ -31,6 +31,7 @@
 		EA3D91D5270FF58D00C89206 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D91D4270FF58D00C89206 /* NavigationController.swift */; };
 		EAC778AD2717181C0038BDE9 /* NoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778AC2717181C0038BDE9 /* NoticiasViewController.swift */; };
 		EAC778B127171C0A0038BDE9 /* NoticiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778B027171C0A0038BDE9 /* NoticiaModel.swift */; };
+		EAC778B32717286E0038BDE9 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778B22717286E0038BDE9 /* EventoModel.swift */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
 		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
@@ -89,6 +90,7 @@
 		EA3D91D4270FF58D00C89206 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		EAC778AC2717181C0038BDE9 /* NoticiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasViewController.swift; sourceTree = "<group>"; };
 		EAC778B027171C0A0038BDE9 /* NoticiaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoticiaModel.swift; path = MARCO_App/Controllers/NoticiaModel.swift; sourceTree = SOURCE_ROOT; };
+		EAC778B22717286E0038BDE9 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventoModel.swift; path = MARCO_App/Controllers/EventoModel.swift; sourceTree = SOURCE_ROOT; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				FB622385270B475300BB46D8 /* ExposicionModel.swift */,
 				EAC778B027171C0A0038BDE9 /* NoticiaModel.swift */,
+				EAC778B22717286E0038BDE9 /* EventoModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,
 				FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */,
 				EA26C50826D5E261000553C8 /* exposicionesViewController.swift in Sources */,
+				EAC778B32717286E0038BDE9 /* EventoModel.swift in Sources */,
 				EA3D91D1270FEFA900C89206 /* SignupViewController.swift in Sources */,
 				EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */,
 				EA2D38DC270D00FE00ED4D7E /* ObraCollectionViewCell.swift in Sources */,
