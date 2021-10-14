@@ -32,6 +32,8 @@
 		EAC778AD2717181C0038BDE9 /* NoticiasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778AC2717181C0038BDE9 /* NoticiasViewController.swift */; };
 		EAC778B127171C0A0038BDE9 /* NoticiaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778B027171C0A0038BDE9 /* NoticiaModel.swift */; };
 		EAC778B32717286E0038BDE9 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778B22717286E0038BDE9 /* EventoModel.swift */; };
+		EAE15F642717BD14004D0F05 /* NoticiaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */; };
+		EAE15F652717BD14004D0F05 /* NoticiaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE15F632717BD14004D0F05 /* NoticiaCollectionViewCell.xib */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
 		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
@@ -91,6 +93,8 @@
 		EAC778AC2717181C0038BDE9 /* NoticiasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiasViewController.swift; sourceTree = "<group>"; };
 		EAC778B027171C0A0038BDE9 /* NoticiaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoticiaModel.swift; path = MARCO_App/Controllers/NoticiaModel.swift; sourceTree = SOURCE_ROOT; };
 		EAC778B22717286E0038BDE9 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventoModel.swift; path = MARCO_App/Controllers/EventoModel.swift; sourceTree = SOURCE_ROOT; };
+		EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaCollectionViewCell.swift; sourceTree = "<group>"; };
+		EAE15F632717BD14004D0F05 /* NoticiaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticiaCollectionViewCell.xib; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				EAFA333B26E80AF10072D0AC /* ObraViewController.xib */,
 				EA2D38DB270D00FE00ED4D7E /* ObraCollectionViewCell.xib */,
 				EA2D38DF270DE37C00ED4D7E /* RecorridoViewController.xib */,
+				EAE15F632717BD14004D0F05 /* NoticiaCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				EA2D38DE270DE37C00ED4D7E /* RecorridoViewController.swift */,
 				EA3D91D4270FF58D00C89206 /* NavigationController.swift */,
 				EAC778AC2717181C0038BDE9 /* NoticiasViewController.swift */,
+				EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -359,6 +365,7 @@
 				CB79BAE926D5B2A3002EBF04 /* LaunchScreen.storyboard in Resources */,
 				CB79BAE626D5B2A3002EBF04 /* Assets.xcassets in Resources */,
 				EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */,
+				EAE15F652717BD14004D0F05 /* NoticiaCollectionViewCell.xib in Resources */,
 				CB79BAE426D5B291002EBF04 /* Main.storyboard in Resources */,
 				EA2D38E1270DE37C00ED4D7E /* RecorridoViewController.xib in Resources */,
 				6F22D8EB26E907E900B287E8 /* GoogleService-Info.plist in Resources */,
@@ -493,6 +500,7 @@
 				EA2D38E0270DE37C00ED4D7E /* RecorridoViewController.swift in Sources */,
 				FB622388270B483500BB46D8 /* Network.swift in Sources */,
 				6F22D8E926E8581A00B287E8 /* LoginViewController.swift in Sources */,
+				EAE15F642717BD14004D0F05 /* NoticiaCollectionViewCell.swift in Sources */,
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
 				EAC778B127171C0A0038BDE9 /* NoticiaModel.swift in Sources */,
 				CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */,

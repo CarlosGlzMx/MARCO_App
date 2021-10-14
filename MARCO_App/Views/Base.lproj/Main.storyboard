@@ -305,7 +305,6 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJJ-mS-IIO"/>
                                                     <segue destination="Fvd-md-7Yh" kind="show" id="93z-hA-q4M"/>
                                                 </connections>
                                             </button>
@@ -780,7 +779,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2h-S8-Q3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765" y="888"/>
+            <point key="canvasLocation" x="1763.7681159420292" y="887.94642857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

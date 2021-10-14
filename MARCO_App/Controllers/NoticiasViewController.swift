@@ -21,11 +21,35 @@ class NoticiasViewController: UIViewController {
         super.viewDidLoad()
         
         title = "Noticias"
-
-        // Do any additional setup after loading the view.
+        
+//        noticiasGrid.delegate = self
+//        noticiasGrid.delegate = self
+//
+//        let nib = UINib(nibName: "", bundle: nil)
+//
+//        noticiasGrid.register(nib, forCellWithReuseIdentifier: "…")
+        
+        fetch()
+        
     }
 
-    
+    func fetch(){
+        NetworkManager.getExternalData(fileLocation: "https://pacific-inlet-83178.herokuapp.com/news", method:.get , parameters: nil, stringParameters: nil) {
+            (event: [Noticia]?, error) in
+            if error != nil
+            {
+                print(error ?? "Hubo un error misterioso")
+                
+            }
+            else{
+                guard let noticias = event else {return}
+                self.noticias = noticias
+                self.noticiasGrid.reloadData()
+                print(noticias)
+                self.noticiasGrid.reloadData()
+            }
+        }
+    }
     
     
     

@@ -14,8 +14,7 @@ struct NewsList: Codable {
 
 // MARK: - WelcomeElement
 struct Noticia: Codable {
-    let id, title, startDate, description: String?
-    let cerraduria, museografia, salas, tecnica: String?
-    let obras: String?
-    let recorridoVirtual, videoURL: String?
+    let id, title, subtitle: String?
+    let date, description: String?
+    let imageUrl: String?
 }
