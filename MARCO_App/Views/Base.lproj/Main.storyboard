@@ -245,7 +245,7 @@
             </objects>
             <point key="canvasLocation" x="-91" y="824"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Eventos-->
         <scene sceneID="ox0-Vp-OTQ">
             <objects>
                 <viewController id="Sgw-v3-pjg" customClass="CalendarViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -254,11 +254,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="I7Q-GP-3AP">
-                                <rect key="frame" x="0.0" y="224" width="414" height="638"/>
+                                <rect key="frame" x="0.0" y="268" width="414" height="594"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENTOS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wga-oI-air">
-                                <rect key="frame" x="0.0" y="44" width="414" height="170"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="170"/>
                                 <color key="backgroundColor" red="0.91682654620000004" green="0.045382730660000002" blue="0.60785490269999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="qRK-UM-wO5"/>
@@ -280,13 +280,14 @@
                             <constraint firstItem="I7Q-GP-3AP" firstAttribute="leading" secondItem="1fr-Ro-dba" secondAttribute="leading" id="icQ-7q-PCE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Eventos" id="ml0-2h-1ze"/>
                     <connections>
                         <outlet property="tableView" destination="I7Q-GP-3AP" id="Ysq-xZ-OaR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wsK-Rb-Y74" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="824"/>
+            <point key="canvasLocation" x="1188" y="824"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -363,6 +364,9 @@
                                                 <state key="normal" title="EVENTOS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="Sgw-v3-pjg" kind="show" id="gKH-1a-QmA"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-tr-xSB">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="190"/>
@@ -545,7 +549,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGA-N3-7ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2741" y="88"/>
+            <point key="canvasLocation" x="2629" y="-477"/>
         </scene>
         <!--Exposiciones-->
         <scene sceneID="Qan-u5-IER">
@@ -614,7 +618,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yw-Zo-zFr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937.68115942028987" y="823.66071428571422"/>
+            <point key="canvasLocation" x="1929" y="824"/>
         </scene>
         <!--Restaurante-->
         <scene sceneID="rGF-hn-w7w">
@@ -734,7 +738,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mY3-6T-sg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2740.579710144928" y="823.66071428571422"/>
+            <point key="canvasLocation" x="2629" y="179"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fxt-eF-cYA">
@@ -822,7 +826,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z2h-S8-Q3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="887.94642857142856"/>
+            <point key="canvasLocation" x="2629" y="824"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
