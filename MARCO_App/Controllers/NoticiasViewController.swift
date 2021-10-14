@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoticiasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class NoticiasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var noticias: [Noticia] = []
     
@@ -23,13 +23,16 @@ class NoticiasViewController: UIViewController, UICollectionViewDelegate, UIColl
         title = "Noticias"
         
         noticiasGrid.delegate = self
-        noticiasGrid.delegate = self
+        noticiasGrid.dataSource = self
 
         let nib = UINib(nibName: "NoticiaCollectionViewCell", bundle: nil)
 
         noticiasGrid.register(nib, forCellWithReuseIdentifier: "noticiaCollectionCell")
         
+        
         fetch()
+        
+        
         
     }
 
@@ -60,7 +63,10 @@ class NoticiasViewController: UIViewController, UICollectionViewDelegate, UIColl
         
         let noticia = noticias[indexPath.row]
         let name = noticia.title
+        let date = noticia.date
         cell.noticiaTitle.text = name
+        cell.noticiaDate.text = date
+        
         
 //        let url = URL(string: "")!
 //        cell.obraImage.downloaded(from: url)
@@ -70,7 +76,9 @@ class NoticiasViewController: UIViewController, UICollectionViewDelegate, UIColl
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+           return CGSize(width: 325, height: 200)
+       }
     
     
   
