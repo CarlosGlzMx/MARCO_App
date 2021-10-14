@@ -66,7 +66,6 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
             else{
                 guard let exposiciones = event else {return}
                 self.exposiciones = exposiciones
-                self.obrasGrid.reloadData()
                 print(exposiciones)
                 self.obrasGrid.reloadData()
             }

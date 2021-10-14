@@ -483,35 +483,46 @@
                                 <state key="normal" title="AGENDAR">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="reserveVisit:" destination="7Bx-62-fPa" eventType="touchUpInside" id="5Bf-1D-rtc"/>
+                                </connections>
                             </button>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="t0a-k2-fNH">
-                                <rect key="frame" x="20" y="264" width="374" height="226"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NÚMERO DE INVITADOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZU-tP-jqn">
-                                <rect key="frame" x="25" y="677" width="202" height="21"/>
+                                <rect key="frame" x="25" y="677.5" width="202" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CORREO ELECTRÓNICO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pc9-y0-8dl">
-                                <rect key="frame" x="25" y="593" width="199" height="21"/>
+                                <rect key="frame" x="25" y="593.5" width="199" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOMBRE PARA LA VISITA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFr-78-QQl">
-                                <rect key="frame" x="25" y="509" width="213" height="21"/>
+                                <rect key="frame" x="25" y="509.5" width="213" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FECHA Y HORA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8E-Ft-hqQ">
-                                <rect key="frame" x="25" y="233" width="129" height="21"/>
+                                <rect key="frame" x="25" y="233" width="129" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView tag="2" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="6wc-hb-0ex">
+                                <rect key="frame" x="214" y="263.5" width="180" height="230.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="4Ap-8x-Pgg"/>
+                                </constraints>
+                            </pickerView>
+                            <pickerView tag="1" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="VIM-O3-D9K">
+                                <rect key="frame" x="20" y="263.5" width="180" height="230.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="WZQ-pd-U5b"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7QM-71-hmc"/>
                         <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -519,20 +530,22 @@
                             <constraint firstItem="Eej-vg-D7L" firstAttribute="top" secondItem="7QM-71-hmc" secondAttribute="top" constant="30" id="1St-jw-7qM"/>
                             <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="Y9G-Cj-ffy" secondAttribute="trailing" constant="50" id="4xb-uy-hD7"/>
                             <constraint firstItem="kZU-tP-jqn" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="25" id="6f3-Yn-Roo"/>
+                            <constraint firstItem="6wc-hb-0ex" firstAttribute="top" secondItem="L8E-Ft-hqQ" secondAttribute="bottom" constant="10" id="D9O-jG-ded"/>
                             <constraint firstItem="0Pe-fl-0ca" firstAttribute="top" secondItem="Pc9-y0-8dl" secondAttribute="bottom" constant="10" id="J7x-RH-Pi0"/>
+                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="6wc-hb-0ex" secondAttribute="trailing" constant="20" id="JgI-lA-9aJ"/>
+                            <constraint firstItem="L8E-Ft-hqQ" firstAttribute="top" secondItem="Eej-vg-D7L" secondAttribute="bottom" constant="25" id="Kc7-va-fCL"/>
                             <constraint firstItem="Pc9-y0-8dl" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="25" id="Mtt-IG-AAj"/>
                             <constraint firstItem="ZEQ-As-CIf" firstAttribute="top" secondItem="kZU-tP-jqn" secondAttribute="bottom" constant="10" id="PY9-fK-4aX"/>
-                            <constraint firstItem="t0a-k2-fNH" firstAttribute="top" secondItem="L8E-Ft-hqQ" secondAttribute="bottom" constant="10" id="Ps7-a3-Vmv"/>
                             <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="0Pe-fl-0ca" secondAttribute="trailing" constant="20" id="Vis-y2-FlX"/>
+                            <constraint firstItem="VIM-O3-D9K" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="W9G-x5-Zhh"/>
                             <constraint firstItem="L8E-Ft-hqQ" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="25" id="ZEG-Up-j5d"/>
                             <constraint firstItem="0Pe-fl-0ca" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="ZY5-Fu-J0I"/>
                             <constraint firstItem="fJX-CF-Y94" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="aWw-Pb-59D"/>
                             <constraint firstItem="Eej-vg-D7L" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" id="bIY-Al-aaB"/>
-                            <constraint firstItem="t0a-k2-fNH" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="e3j-9y-NNL"/>
+                            <constraint firstItem="fJX-CF-Y94" firstAttribute="top" secondItem="6wc-hb-0ex" secondAttribute="bottom" constant="46" id="car-yl-Hbf"/>
                             <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="ZEQ-As-CIf" secondAttribute="trailing" constant="20" id="edQ-27-lgf"/>
                             <constraint firstItem="7QM-71-hmc" firstAttribute="bottom" secondItem="Y9G-Cj-ffy" secondAttribute="bottom" constant="35" id="fOx-kr-ls0"/>
                             <constraint firstItem="Y9G-Cj-ffy" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="50" id="fZS-Md-3OF"/>
-                            <constraint firstItem="fJX-CF-Y94" firstAttribute="top" secondItem="t0a-k2-fNH" secondAttribute="bottom" constant="50" id="gof-s8-tnu"/>
                             <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="fJX-CF-Y94" secondAttribute="trailing" constant="20" id="hcR-UT-qag"/>
                             <constraint firstItem="sFr-78-QQl" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="25" id="igx-bU-byn"/>
                             <constraint firstItem="0Pe-fl-0ca" firstAttribute="top" secondItem="fJX-CF-Y94" secondAttribute="bottom" constant="50" id="l3K-JW-PEO"/>
@@ -540,16 +553,24 @@
                             <constraint firstItem="ZEQ-As-CIf" firstAttribute="leading" secondItem="7QM-71-hmc" secondAttribute="leading" constant="20" id="o1f-cH-ooF"/>
                             <constraint firstItem="Eej-vg-D7L" firstAttribute="trailing" secondItem="7QM-71-hmc" secondAttribute="trailing" id="pMz-pZ-qBh"/>
                             <constraint firstItem="Y9G-Cj-ffy" firstAttribute="top" secondItem="ZEQ-As-CIf" secondAttribute="bottom" constant="40" id="r8g-SZ-P7m"/>
+                            <constraint firstItem="VIM-O3-D9K" firstAttribute="top" secondItem="L8E-Ft-hqQ" secondAttribute="bottom" constant="10" id="rIb-0d-4ji"/>
                             <constraint firstItem="fJX-CF-Y94" firstAttribute="top" secondItem="sFr-78-QQl" secondAttribute="bottom" constant="10" id="tBP-81-SwT"/>
-                            <constraint firstItem="7QM-71-hmc" firstAttribute="trailing" secondItem="t0a-k2-fNH" secondAttribute="trailing" constant="20" id="u9R-Iq-Aeb"/>
                             <constraint firstItem="ZEQ-As-CIf" firstAttribute="top" secondItem="0Pe-fl-0ca" secondAttribute="bottom" constant="50" id="vmG-Tn-b8t"/>
+                            <constraint firstItem="fJX-CF-Y94" firstAttribute="top" secondItem="VIM-O3-D9K" secondAttribute="bottom" constant="46" id="yDS-f2-Hr1"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Visitas" id="a85-Ay-Qcl"/>
+                    <connections>
+                        <outlet property="datePicker" destination="VIM-O3-D9K" id="oga-Nj-VCA"/>
+                        <outlet property="emailField" destination="0Pe-fl-0ca" id="qk5-Tb-OV9"/>
+                        <outlet property="guidePicker" destination="6wc-hb-0ex" id="nts-f5-zMJ"/>
+                        <outlet property="nameField" destination="fJX-CF-Y94" id="kzw-9b-3nF"/>
+                        <outlet property="sizeField" destination="ZEQ-As-CIf" id="wvD-t6-FJ2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGA-N3-7ns" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629" y="-477"/>
+            <point key="canvasLocation" x="2628.985507246377" y="-477.45535714285711"/>
         </scene>
         <!--Exposiciones-->
         <scene sceneID="Qan-u5-IER">
