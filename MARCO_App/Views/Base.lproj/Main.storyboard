@@ -300,10 +300,10 @@
                                 <rect key="frame" x="20" y="220" width="374" height="610"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-5z-qIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="295"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="VISITAS">
@@ -314,7 +314,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="EXPOSICIONES">
@@ -327,10 +327,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJq-sQ-rZJ">
-                                        <rect key="frame" x="0.0" y="315" width="374" height="295"/>
+                                        <rect key="frame" x="0.0" y="210" width="374" height="190"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="RESTAURANTE">
@@ -341,14 +341,38 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="295"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
                                                 <color key="backgroundColor" red="0.99607843137254903" green="0.20392156862745098" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="NOTICIAS">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="Fvd-md-7Yh" kind="show" id="93z-hA-q4M"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vqT-iW-nhK">
+                                        <rect key="frame" x="0.0" y="420" width="374" height="190"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-Xk-g0S">
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                                <state key="normal" title="EVENTOS">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-tr-xSB">
+                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
+                                                <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="MÁS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJJ-mS-IIO"/>
+                                                    <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeN-WK-2tA"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -731,6 +755,75 @@
             </objects>
             <point key="canvasLocation" x="939.13043478260875" y="88.392857142857139"/>
         </scene>
+        <!--Noticias-->
+        <scene sceneID="KxY-CS-yvC">
+            <objects>
+                <viewController id="Fvd-md-7Yh" customClass="NoticiasViewController" customModule="MARCO_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6sF-yC-BMW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marco noche" translatesAutoresizingMaskIntoConstraints="NO" id="Rdg-gd-oc4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="184"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="184" id="KB8-2O-rJh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#QuéPasoEnMARCO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lhH-R1-ozX">
+                                <rect key="frame" x="0.0" y="272" width="414" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="BJE-Ye-Pob"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="21"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fL1-11-yUB">
+                                <rect key="frame" x="0.0" y="362" width="414" height="534"/>
+                                <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z3V-mQ-Plv">
+                                    <size key="itemSize" width="325" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dGf-Gl-t7F">
+                                        <rect key="frame" x="44.5" y="10" width="325" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aZT-yX-M4X">
+                                            <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="k09-xP-6ha"/>
+                        <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fL1-11-yUB" secondAttribute="bottom" id="3zu-hh-liz"/>
+                            <constraint firstItem="fL1-11-yUB" firstAttribute="trailing" secondItem="k09-xP-6ha" secondAttribute="trailing" id="6Q5-JW-V57"/>
+                            <constraint firstItem="fL1-11-yUB" firstAttribute="top" secondItem="lhH-R1-ozX" secondAttribute="bottom" constant="10" id="Fs3-ga-yL0"/>
+                            <constraint firstItem="lhH-R1-ozX" firstAttribute="leading" secondItem="k09-xP-6ha" secondAttribute="leading" id="MYL-vm-C68"/>
+                            <constraint firstItem="Rdg-gd-oc4" firstAttribute="leading" secondItem="k09-xP-6ha" secondAttribute="leading" id="U8n-Zj-J1t"/>
+                            <constraint firstItem="k09-xP-6ha" firstAttribute="trailing" secondItem="lhH-R1-ozX" secondAttribute="trailing" id="VVu-cU-fzv"/>
+                            <constraint firstItem="fL1-11-yUB" firstAttribute="leading" secondItem="k09-xP-6ha" secondAttribute="leading" id="Vx3-zc-IGM"/>
+                            <constraint firstItem="lhH-R1-ozX" firstAttribute="top" secondItem="Rdg-gd-oc4" secondAttribute="bottom" id="jRe-pA-Bz5"/>
+                            <constraint firstItem="Rdg-gd-oc4" firstAttribute="top" secondItem="k09-xP-6ha" secondAttribute="top" id="qRi-xP-DPt"/>
+                            <constraint firstItem="k09-xP-6ha" firstAttribute="trailing" secondItem="Rdg-gd-oc4" secondAttribute="trailing" id="r3V-UA-x4u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Noticias" id="OG0-mV-LBd"/>
+                    <connections>
+                        <outlet property="noticiasGrid" destination="fL1-11-yUB" id="BOV-ge-mll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2h-S8-Q3g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="887.94642857142856"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="m74-oc-ieK"/>
@@ -740,6 +833,7 @@
         <image name="Picture1" width="974" height="433"/>
         <image name="img_24787" width="980" height="980"/>
         <image name="map" catalog="system" width="128" height="110"/>
+        <image name="marco noche" width="800" height="533"/>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
