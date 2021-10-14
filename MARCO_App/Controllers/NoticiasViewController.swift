@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoticiasViewController: UIViewController {
+class NoticiasViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     var noticias: [Noticia] = []
     
@@ -22,12 +22,12 @@ class NoticiasViewController: UIViewController {
         
         title = "Noticias"
         
-//        noticiasGrid.delegate = self
-//        noticiasGrid.delegate = self
-//
-//        let nib = UINib(nibName: "", bundle: nil)
-//
-//        noticiasGrid.register(nib, forCellWithReuseIdentifier: "…")
+        noticiasGrid.delegate = self
+        noticiasGrid.delegate = self
+
+        let nib = UINib(nibName: "NoticiaCollectionViewCell", bundle: nil)
+
+        noticiasGrid.register(nib, forCellWithReuseIdentifier: "noticiaCollectionCell")
         
         fetch()
         
@@ -44,12 +44,32 @@ class NoticiasViewController: UIViewController {
             else{
                 guard let noticias = event else {return}
                 self.noticias = noticias
-                self.noticiasGrid.reloadData()
                 print(noticias)
                 self.noticiasGrid.reloadData()
             }
         }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        noticias.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "noticiaCollectionCell", for: indexPath) as! NoticiaCollectionViewCell
+        
+        let noticia = noticias[indexPath.row]
+        let name = noticia.title
+        cell.noticiaTitle.text = name
+        
+//        let url = URL(string: "")!
+//        cell.obraImage.downloaded(from: url)
+        cell.noticiaImage.image = UIImage(named: "Obra2")
+        
+        
+        return cell
+    }
+    
     
     
     

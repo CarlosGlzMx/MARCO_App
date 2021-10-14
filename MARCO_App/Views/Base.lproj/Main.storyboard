@@ -740,17 +740,17 @@
                                 <rect key="frame" x="0.0" y="362" width="414" height="534"/>
                                 <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z3V-mQ-Plv">
-                                    <size key="itemSize" width="185" height="125"/>
+                                    <size key="itemSize" width="225" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dGf-Gl-t7F">
-                                        <rect key="frame" x="15" y="10" width="185" height="125"/>
+                                        <rect key="frame" x="94.5" y="10" width="225" height="200"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aZT-yX-M4X">
-                                            <rect key="frame" x="0.0" y="0.0" width="185" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="225" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>

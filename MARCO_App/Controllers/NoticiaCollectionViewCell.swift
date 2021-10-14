@@ -9,6 +9,12 @@
 import UIKit
 
 class NoticiaCollectionViewCell: UICollectionViewCell {
+    
+    
+    @IBOutlet weak var noticiaImage: UIImageView!
+    @IBOutlet weak var noticiaTitle: UILabel!
+    @IBOutlet weak var noticiaDate: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
