@@ -15,6 +15,11 @@ class ObraViewController: UIViewController {
     @IBOutlet weak var obraTitle: UILabel!
     @IBOutlet weak var obraDescription: UITextView!
     
+    @IBOutlet weak var lblCuraduria: UILabel!
+    @IBOutlet weak var lblMuseografia: UILabel!
+    @IBOutlet weak var lblSalas: UILabel!
+    @IBOutlet weak var lblTecnica: UILabel!
+    @IBOutlet weak var lblObras: UILabel!
     
     var exposicion : Exposicion?
     override func viewDidLoad() {
@@ -27,6 +32,12 @@ class ObraViewController: UIViewController {
         obraTitle.text = obra.title
         obraDescription.text = obra.description
         
+        lblCuraduria.text = obra.cerraduria
+        lblMuseografia.text = obra.museografia
+        lblSalas.text = obra.salas
+        lblTecnica.text = obra.tecnica
+        lblObras.text = obra.obras
+        
     }
     
     func formatDate(date: String?) -> String{
@@ -38,6 +49,13 @@ class ObraViewController: UIViewController {
 //        if let url =
         let viewController = RecorridoViewController(nibName: "RecorridoViewController", bundle: nil)
         viewController.recorridoUrl = exposicion?.recorridoVirtual
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    @IBAction func videoBtn(_ sender: Any) {
+        let viewController = RecorridoViewController(nibName: "RecorridoViewController", bundle: nil)
+        viewController.recorridoUrl = exposicion?.videoUrl
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     

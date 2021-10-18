@@ -108,6 +108,10 @@ class ReservacionViewController: UIViewController {
             let session = URLSession.shared
             session.dataTask(with: request) { (data, response, error) in
                 if let response = response {
+//                    HTTPURLResponse(coder: response.status)
+                    DispatchQueue.main.async {
+                        self.displayAlert(title: "Visita Agendada", message: "¡Tu Visita ha sido agendada exitosamente! 😁")
+                    }
                     print("Hubo una respuesta")
                 }
             }.resume()

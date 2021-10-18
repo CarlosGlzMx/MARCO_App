@@ -10,6 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ObraViewController" customModule="MARCO_App" customModuleProvider="target">
             <connections>
+                <outlet property="lblCuraduria" destination="z6O-CV-s69" id="dFp-f9-E97"/>
+                <outlet property="lblMuseografia" destination="TLi-EG-VMw" id="4QY-o1-1L1"/>
+                <outlet property="lblObras" destination="D4J-Lm-gRC" id="o4W-et-KSy"/>
+                <outlet property="lblSalas" destination="VVN-Y6-cNe" id="PBl-p7-PVd"/>
+                <outlet property="lblTecnica" destination="Q7i-bG-X58" id="9uI-qN-JIF"/>
                 <outlet property="obraDate" destination="vjW-AX-iRC" id="3Me-l2-Vfr"/>
                 <outlet property="obraDescription" destination="1El-1p-WhB" id="hMD-Bw-aeS"/>
                 <outlet property="obraImage" destination="TvJ-p2-BkL" id="lew-oa-cAe"/>
@@ -29,19 +34,22 @@
                         <constraint firstAttribute="width" constant="431" id="vj1-qw-xRf"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-e2-2or">
-                    <rect key="frame" x="37" y="816" width="150" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-e2-2or">
+                    <rect key="frame" x="37" y="811" width="160" height="30"/>
                     <color key="backgroundColor" red="0.99215686274509807" green="0.20784313725490194" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="150" id="5H0-lh-dqM"/>
+                        <constraint firstAttribute="width" constant="160" id="1E2-y6-xMX"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                    <state key="normal" title="Comprar Boletos">
+                    <state key="normal" title="Video">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="videoBtn:" destination="-1" eventType="touchUpInside" id="IHt-Zc-8fS"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-MD-b8W">
-                    <rect key="frame" x="226" y="816" width="150" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-MD-b8W">
+                    <rect key="frame" x="217" y="811" width="160" height="30"/>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                     <state key="normal" title="Recorrido Virtual">
@@ -52,7 +60,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-K3-Gvg">
-                    <rect key="frame" x="27" y="338" width="360" height="30"/>
+                    <rect key="frame" x="27" y="357" width="360" height="30"/>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="360" id="ACI-89-H9w"/>
@@ -62,14 +70,8 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octubre 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
-                    <rect key="frame" x="213" y="307" width="151" height="30"/>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
-                    <rect key="frame" x="32" y="392" width="350" height="223"/>
+                    <rect key="frame" x="32" y="407" width="350" height="223"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="223" id="Mek-Mz-hNP"/>
@@ -83,24 +85,83 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octubre 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
+                    <rect key="frame" x="214" y="307" width="167" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z6O-CV-s69">
+                    <rect key="frame" x="32" y="640" width="350" height="20"/>
+                    <string key="text">CURADURÍA: Eduardo López, fundador y director de la galería FF projects.
+
+</string>
+                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SALAS: 1 a 5 | Planta baja" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVN-Y6-cNe">
+                    <rect key="frame" x="32" y="699.5" width="350" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TÉCNICA&quot;:&quot;Escultura, ensamblajes, relieves, pinturas, obras en vídeo, fotografía e instalaciones&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-bG-X58">
+                    <rect key="frame" x="32" y="729" width="350" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OBRAS: 94 piezas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4J-Lm-gRC">
+                    <rect key="frame" x="32" y="758.5" width="350" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUSEOGRAFÍA: Eduardo López." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLi-EG-VMw">
+                    <rect key="frame" x="32" y="670" width="350" height="19.5"/>
+                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="buF-K3-Gvg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2xt-CL-iWD"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vjW-AX-iRC" secondAttribute="trailing" constant="50" id="CEZ-aq-To9"/>
-                <constraint firstItem="9Ia-MD-b8W" firstAttribute="leading" secondItem="JfP-e2-2or" secondAttribute="trailing" constant="39" id="Fij-Fp-KaH"/>
+                <constraint firstItem="VVN-Y6-cNe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3Ar-m1-DMP"/>
+                <constraint firstItem="9Ia-MD-b8W" firstAttribute="leading" secondItem="JfP-e2-2or" secondAttribute="trailing" constant="20" id="5du-wL-eQr"/>
+                <constraint firstItem="Q7i-bG-X58" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="ANV-9k-PYQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vjW-AX-iRC" secondAttribute="trailing" constant="33" id="CEZ-aq-To9"/>
                 <constraint firstItem="JfP-e2-2or" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="J62-3Q-WQt"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ja4-Xf-vMb"/>
+                <constraint firstItem="D4J-Lm-gRC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Lih-Wn-0uh"/>
+                <constraint firstItem="JfP-e2-2or" firstAttribute="top" secondItem="D4J-Lm-gRC" secondAttribute="bottom" constant="33" id="O2C-DP-4qW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Ia-MD-b8W" secondAttribute="trailing" constant="37" id="P8E-fb-VJa"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QXc-rg-Pv3"/>
+                <constraint firstItem="Q7i-bG-X58" firstAttribute="top" secondItem="VVN-Y6-cNe" secondAttribute="bottom" constant="10" id="QdX-v7-IXQ"/>
+                <constraint firstItem="z6O-CV-s69" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="R0X-NL-cp5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="z6O-CV-s69" secondAttribute="trailing" constant="32" id="SRi-6Z-efy"/>
                 <constraint firstItem="1El-1p-WhB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="T1W-Ja-yXr"/>
-                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="392" id="TKL-VH-6wX"/>
+                <constraint firstItem="VVN-Y6-cNe" firstAttribute="top" secondItem="TLi-EG-VMw" secondAttribute="bottom" constant="10" id="TGE-yk-nrt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TLi-EG-VMw" secondAttribute="trailing" constant="32" id="Xys-6N-aMj"/>
                 <constraint firstItem="1El-1p-WhB" firstAttribute="centerX" secondItem="buF-K3-Gvg" secondAttribute="centerX" id="a0w-iK-tg7"/>
-                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="buF-K3-Gvg" secondAttribute="bottom" constant="24" id="hwn-Ok-nr4"/>
-                <constraint firstItem="JfP-e2-2or" firstAttribute="baseline" secondItem="9Ia-MD-b8W" secondAttribute="baseline" id="ly7-my-Nmc"/>
+                <constraint firstItem="D4J-Lm-gRC" firstAttribute="top" secondItem="Q7i-bG-X58" secondAttribute="bottom" constant="10" id="axY-iQ-ZV4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VVN-Y6-cNe" secondAttribute="trailing" constant="32" id="cEs-uU-DZF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Q7i-bG-X58" secondAttribute="trailing" constant="32" id="cmR-Nc-Erh"/>
+                <constraint firstItem="TLi-EG-VMw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cyg-0s-zZz"/>
+                <constraint firstItem="z6O-CV-s69" firstAttribute="top" secondItem="1El-1p-WhB" secondAttribute="bottom" constant="10" id="d5o-oZ-5dY"/>
+                <constraint firstItem="D4J-Lm-gRC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dPX-6B-zgC"/>
+                <constraint firstItem="9Ia-MD-b8W" firstAttribute="top" secondItem="D4J-Lm-gRC" secondAttribute="bottom" constant="33" id="df9-aV-iu1"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="buF-K3-Gvg" secondAttribute="bottom" constant="20" id="hwn-Ok-nr4"/>
+                <constraint firstItem="z6O-CV-s69" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="lJg-ae-nvk"/>
+                <constraint firstItem="TLi-EG-VMw" firstAttribute="top" secondItem="z6O-CV-s69" secondAttribute="bottom" constant="10" id="mtt-Zh-U3p"/>
                 <constraint firstItem="vjW-AX-iRC" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="20" id="twk-ev-t6g"/>
-                <constraint firstAttribute="trailing" secondItem="TvJ-p2-BkL" secondAttribute="trailing" id="xoO-m3-15F"/>
-                <constraint firstItem="vjW-AX-iRC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="213" id="yHd-JA-ETN"/>
+                <constraint firstItem="buF-K3-Gvg" firstAttribute="top" secondItem="vjW-AX-iRC" secondAttribute="bottom" constant="20" id="vdQ-Ks-ymC"/>
+                <constraint firstItem="Q7i-bG-X58" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vjl-Id-5eM"/>
+                <constraint firstAttribute="trailing" secondItem="D4J-Lm-gRC" secondAttribute="trailing" constant="32" id="x09-Y7-AdB"/>
+                <constraint firstItem="VVN-Y6-cNe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="yHb-Cr-goe"/>
+                <constraint firstItem="TLi-EG-VMw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="zsf-M4-9gk"/>
             </constraints>
             <point key="canvasLocation" x="95.652173913043484" y="89.732142857142847"/>
         </view>
