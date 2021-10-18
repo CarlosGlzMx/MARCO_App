@@ -35,8 +35,12 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
     }
     
+    func formatDate(date: String?) -> String{
+        return String((date?.split(separator: "T").first ?? ""));
+    }
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        events[section].date
+        formatDate(date: events[section].date)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

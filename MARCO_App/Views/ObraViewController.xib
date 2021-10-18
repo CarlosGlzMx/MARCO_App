@@ -29,7 +29,7 @@
                         <constraint firstAttribute="width" constant="431" id="vj1-qw-xRf"/>
                     </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-e2-2or">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-e2-2or">
                     <rect key="frame" x="37" y="816" width="150" height="30"/>
                     <color key="backgroundColor" red="0.99215686274509807" green="0.20784313725490194" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -40,7 +40,7 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-MD-b8W">
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ia-MD-b8W">
                     <rect key="frame" x="226" y="816" width="150" height="30"/>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -51,41 +51,28 @@
                         <action selector="recorridoBtn:" destination="-1" eventType="touchUpInside" id="tgd-16-4Hi"/>
                     </connections>
                 </button>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Pds-eQ-SfA">
-                    <rect key="frame" x="43" y="418" width="344" height="32"/>
-                    <segments>
-                        <segment title="Descripción"/>
-                        <segment title="Galería"/>
-                        <segment title="Recomendados"/>
-                    </segments>
-                </segmentedControl>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sj-to-T3g">
-                    <rect key="frame" x="60" y="302" width="40" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="40" id="5W6-aa-4yR"/>
-                        <constraint firstAttribute="width" constant="40" id="bc5-pq-tJY"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-K3-Gvg">
-                    <rect key="frame" x="35" y="348" width="360" height="50"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INDEX MARCO - FF projects" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buF-K3-Gvg">
+                    <rect key="frame" x="27" y="338" width="360" height="30"/>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="50" id="2hJ-0w-ZaV"/>
                         <constraint firstAttribute="width" constant="360" id="ACI-89-H9w"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="tXe-vD-oab"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
-                    <rect key="frame" x="40" y="464" width="350" height="310"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octubre 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
+                    <rect key="frame" x="213" y="307" width="151" height="30"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                    <color key="textColor" red="0.99215686270000003" green="0.20784313730000001" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="1El-1p-WhB">
+                    <rect key="frame" x="32" y="392" width="350" height="223"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="350" id="GpA-h2-o4h"/>
-                        <constraint firstAttribute="height" constant="310" id="YaS-52-nAi"/>
+                        <constraint firstAttribute="height" constant="223" id="Mek-Mz-hNP"/>
                     </constraints>
                     <string key="text">A raíz de la fuerte crisis económica que enfrentan los museos a nivel internacional, y derivado de la necesidad de buscar nuevos posicionamientos de las producciones artísticas actuales, MARCO pensó en el patio de las esculturas como una posibilidad de generar nexos con la comunidad artística de Monterrey que se ha preocupado por buscar un lugar en el espacio institucional global. Por tal motivo, su directora Taiyana Pimentel en colaboración con los Miembros del Consejo Directivo, pensaron en este proyecto.
 
@@ -96,35 +83,24 @@ El subtexto de la exposición es relevante al momento que estamos todos viviendo
                     <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="octubre 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-AX-iRC">
-                    <rect key="frame" x="100" y="313" width="230" height="18"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="vjW-AX-iRC" firstAttribute="leading" secondItem="6sj-to-T3g" secondAttribute="trailing" id="0Hg-G1-el4"/>
                 <constraint firstItem="buF-K3-Gvg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2xt-CL-iWD"/>
-                <constraint firstItem="6sj-to-T3g" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="60" id="9aC-rw-xwF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vjW-AX-iRC" secondAttribute="trailing" constant="100" id="CEZ-aq-To9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vjW-AX-iRC" secondAttribute="trailing" constant="50" id="CEZ-aq-To9"/>
                 <constraint firstItem="9Ia-MD-b8W" firstAttribute="leading" secondItem="JfP-e2-2or" secondAttribute="trailing" constant="39" id="Fij-Fp-KaH"/>
-                <constraint firstItem="Pds-eQ-SfA" firstAttribute="top" secondItem="buF-K3-Gvg" secondAttribute="bottom" constant="20" id="FtR-Yp-L5T"/>
-                <constraint firstItem="1El-1p-WhB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HL6-FK-IFY"/>
-                <constraint firstItem="Pds-eQ-SfA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="IMj-ZI-uzW"/>
-                <constraint firstItem="Pds-eQ-SfA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="IYe-35-Fik"/>
                 <constraint firstItem="JfP-e2-2or" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="37" id="J62-3Q-WQt"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ja4-Xf-vMb"/>
-                <constraint firstItem="buF-K3-Gvg" firstAttribute="top" secondItem="6sj-to-T3g" secondAttribute="bottom" constant="6" id="LwQ-M0-A6a"/>
-                <constraint firstItem="JfP-e2-2or" firstAttribute="top" secondItem="1El-1p-WhB" secondAttribute="bottom" constant="41" id="MHk-pb-4Pq"/>
                 <constraint firstItem="TvJ-p2-BkL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QXc-rg-Pv3"/>
-                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="Pds-eQ-SfA" secondAttribute="bottom" constant="15" id="Zxm-Tf-gce"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="T1W-Ja-yXr"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="392" id="TKL-VH-6wX"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="centerX" secondItem="buF-K3-Gvg" secondAttribute="centerX" id="a0w-iK-tg7"/>
+                <constraint firstItem="1El-1p-WhB" firstAttribute="top" secondItem="buF-K3-Gvg" secondAttribute="bottom" constant="24" id="hwn-Ok-nr4"/>
                 <constraint firstItem="JfP-e2-2or" firstAttribute="baseline" secondItem="9Ia-MD-b8W" secondAttribute="baseline" id="ly7-my-Nmc"/>
-                <constraint firstItem="vjW-AX-iRC" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="26" id="twk-ev-t6g"/>
-                <constraint firstItem="6sj-to-T3g" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="15" id="wGy-W0-ODc"/>
+                <constraint firstItem="vjW-AX-iRC" firstAttribute="top" secondItem="TvJ-p2-BkL" secondAttribute="bottom" constant="20" id="twk-ev-t6g"/>
                 <constraint firstAttribute="trailing" secondItem="TvJ-p2-BkL" secondAttribute="trailing" id="xoO-m3-15F"/>
+                <constraint firstItem="vjW-AX-iRC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="213" id="yHd-JA-ETN"/>
             </constraints>
             <point key="canvasLocation" x="95.652173913043484" y="89.732142857142847"/>
         </view>

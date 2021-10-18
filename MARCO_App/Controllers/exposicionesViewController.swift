@@ -72,6 +72,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         }
     }
     
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         exposiciones.count
     }

@@ -23,10 +23,14 @@ class ObraViewController: UIViewController {
     guard let obra = exposicion else {return}
         
 //        let urlRecorrido = URL(string: obra.recorridoVirtual)!
-        obraDate.text = obra.startDate
+        obraDate.text = formatDate(date: obra.startDate)
         obraTitle.text = obra.title
         obraDescription.text = obra.description
         
+    }
+    
+    func formatDate(date: String?) -> String{
+        return String((date?.split(separator: "T").first ?? ""));
     }
  
     
@@ -40,3 +44,4 @@ class ObraViewController: UIViewController {
     
 
 }
+
