@@ -38,6 +38,9 @@ class ObraViewController: UIViewController {
         lblTecnica.text = "TÉCNICA: " + obra.tecnica!
         lblObras.text = "OBRAS: " + obra.obras!
         
+//        let url = URL(string: obra.photoUrl)!
+//        obraImage.downloaded(from: url)
+        
     }
     
     func formatDate(date: String?) -> String{

@@ -66,6 +66,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
             else{
                 guard let exposiciones = event else {return}
                 self.exposiciones = exposiciones
+                print(exposiciones)
                 self.obrasGrid.reloadData()
             }
         }
@@ -84,7 +85,7 @@ class exposicionesViewController: UIViewController, UICollectionViewDelegate, UI
         let name = obra.title
         cell.obraTitle.text = name
         
-//        let url = URL(string: "")!
+//        let url = URL(string: obra.photoUrl)!
 //        cell.obraImage.downloaded(from: url)
         cell.obraImage.image = UIImage(named: "Obra1")
         

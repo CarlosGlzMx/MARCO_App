@@ -68,9 +68,9 @@ class NoticiasViewController: UIViewController, UICollectionViewDelegate, UIColl
         cell.noticiaDate.text = date
         cell.noticiaSubtitle.text = noticia.subtitle
         cell.noticiaDescription.text = noticia.description
-        cell.contentView.layer.borderWidth = 2
+        cell.contentView.layer.borderWidth = 1
         cell.contentView.layer.borderColor = UIColor.black.cgColor
-        cell.contentView.layer.cornerRadius = 6
+        //cell.contentView.layer.cornerRadius = 6
         
         
         let url = URL(string: noticia.photoUrl)!

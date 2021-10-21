@@ -23,4 +23,5 @@ struct Exposicion: Codable {
     let cerraduria, museografia, salas, tecnica: String?
     let obras: String?
     let recorridoVirtual, videoUrl: String?
+    let photoUrl: String
 }
