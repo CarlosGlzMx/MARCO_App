@@ -298,29 +298,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YcU-qn-eGs">
-                                <rect key="frame" x="20" y="220" width="374" height="610"/>
+                                <rect key="frame" x="20" y="220" width="374" height="600"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vEE-5z-qIO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="190"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="rRq-GS-l27">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="186.5"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="VISITAS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="7Bx-62-fPa" kind="show" id="jjS-cO-aWm"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yO4-su-CdQ">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="186.5"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="EXPOSICIONES">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="LQq-i9-7JR" kind="show" id="SNz-QH-bHB"/>
                                                 </connections>
@@ -328,26 +338,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cJq-sQ-rZJ">
-                                        <rect key="frame" x="0.0" y="210" width="374" height="190"/>
+                                        <rect key="frame" x="0.0" y="206.5" width="374" height="187"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-hG-eR5">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="187"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="RESTAURANTE">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="DrK-Oh-Oym" kind="show" id="9PY-zA-qVa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8oH-H4-XYO">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="187"/>
                                                 <color key="backgroundColor" red="0.99607843137254903" green="0.20392156862745098" blue="0.40784313725490196" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="NOTICIAS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="Fvd-md-7Yh" kind="show" id="93z-hA-q4M"/>
                                                 </connections>
@@ -355,26 +375,36 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="center" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vqT-iW-nhK">
-                                        <rect key="frame" x="0.0" y="420" width="374" height="190"/>
+                                        <rect key="frame" x="0.0" y="413.5" width="374" height="186.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-Xk-g0S">
-                                                <rect key="frame" x="0.0" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="177" height="186.5"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="EVENTOS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <segue destination="Sgw-v3-pjg" kind="show" id="gKH-1a-QmA"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-tr-xSB">
-                                                <rect key="frame" x="197" y="0.0" width="177" height="190"/>
+                                                <rect key="frame" x="197" y="0.0" width="177" height="186.5"/>
                                                 <color key="backgroundColor" red="0.99607843139999996" green="0.20392156859999999" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                                 <state key="normal" title="MÁS">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="muestraWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YeN-WK-2tA"/>
                                                 </connections>
@@ -413,7 +443,7 @@
                             <constraint firstItem="4hs-pJ-6XL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KE6-ci-ino"/>
                             <constraint firstItem="YcU-qn-eGs" firstAttribute="top" secondItem="4hs-pJ-6XL" secondAttribute="bottom" constant="20" id="LgS-ug-eDz"/>
                             <constraint firstItem="YcU-qn-eGs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RtM-N8-kuJ"/>
-                            <constraint firstItem="dQg-un-Fgy" firstAttribute="top" secondItem="YcU-qn-eGs" secondAttribute="bottom" constant="10" id="Uhq-eW-XEc"/>
+                            <constraint firstItem="dQg-un-Fgy" firstAttribute="top" secondItem="YcU-qn-eGs" secondAttribute="bottom" constant="20" id="Uhq-eW-XEc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dQg-un-Fgy" secondAttribute="bottom" id="kcq-Tg-KQM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dQg-un-Fgy" secondAttribute="trailing" id="pZn-Fe-qgz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YcU-qn-eGs" secondAttribute="trailing" constant="20" id="xvs-aB-mON"/>
@@ -683,6 +713,9 @@
                                 <state key="normal" title="RESERVAR">
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="reservaMesa:" destination="DrK-Oh-Oym" eventType="touchUpInside" id="3jA-fr-kye"/>
+                                </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Sq-tHh">
                                 <rect key="frame" x="20" y="264" width="374" height="226"/>
@@ -807,18 +840,18 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fL1-11-yUB">
                                 <rect key="frame" x="0.0" y="362" width="414" height="534"/>
                                 <color key="backgroundColor" red="0.96402198080000001" green="0.94539588689999998" blue="0.92547613380000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Z3V-mQ-Plv">
-                                    <size key="itemSize" width="325" height="200"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="Z3V-mQ-Plv">
+                                    <size key="itemSize" width="350" height="250"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="15" minY="10" maxX="15" maxY="10"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dGf-Gl-t7F">
-                                        <rect key="frame" x="44.5" y="10" width="325" height="200"/>
+                                        <rect key="frame" x="32" y="10" width="350" height="250"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aZT-yX-M4X">
-                                            <rect key="frame" x="0.0" y="0.0" width="325" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="250"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
                                     </collectionViewCell>

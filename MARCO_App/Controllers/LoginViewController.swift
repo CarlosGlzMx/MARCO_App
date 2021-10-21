@@ -39,8 +39,7 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) {
             authResult, error in
             if error != nil {
-                print(error!)
-                self.displayAlert(title: "Error", message: "Login no valido")
+                self.displayAlert(title: "Error", message: "Ingrese datos correctos")
             }
             else {
                 self.performSegue(withIdentifier: "segueLogin", sender: nil)

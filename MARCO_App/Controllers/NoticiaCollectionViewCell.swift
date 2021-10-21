@@ -14,6 +14,8 @@ class NoticiaCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var noticiaImage: UIImageView!
     @IBOutlet weak var noticiaTitle: UILabel!
     @IBOutlet weak var noticiaDate: UILabel!
+    @IBOutlet weak var noticiaSubtitle: UILabel!
+    @IBOutlet weak var noticiaDescription: UILabel!
     
 
     override func awakeFromNib() {

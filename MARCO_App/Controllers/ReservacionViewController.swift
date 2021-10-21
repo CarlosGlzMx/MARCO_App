@@ -29,6 +29,8 @@ class ReservacionViewController: UIViewController {
         super.viewDidLoad()
         title = "Agendar Visitas"
         
+        emailField.text = Auth.auth().currentUser?.email
+        emailField.isEnabled = false
         
         
         datePicker.dataSource = self
@@ -74,15 +76,17 @@ class ReservacionViewController: UIViewController {
     
     @IBAction func reserveVisit(_ sender: Any) {
         guard let email = emailField.text else {
-            print("Error de email")
             displayAlert(title: "Error", message: "El email no es válido")
             return
         }
-
+        
         guard let size = sizeField.text else {
-            print("Error en contraseña")
             displayAlert(title: "Error", message: "El password no es válido")
             return
+        }
+        
+        if !size.isInt || Int(size) ?? 0 < 1 {
+                displayAlert(title: "Error", message: "Elige un número de invitados válido")
         }
         
         guard let userId = Auth.auth().currentUser?.uid else {
@@ -173,4 +177,8 @@ extension ReservacionViewController: UIPickerViewDelegate{
     
 }
 
-
+extension String {
+    var isInt: Bool {
+        return Int(self) != nil
+    }
+}

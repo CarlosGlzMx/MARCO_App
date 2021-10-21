@@ -16,7 +16,16 @@ class restauranteViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func reservaMesa(_ sender: Any) {
+        displayAlert(title: "Funcionalidad pendiente", message: "Reservar una mesa en el restaurante aún no es posible")
+    }
+    
+    func displayAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 

@@ -32,11 +32,11 @@ class ObraViewController: UIViewController {
         obraTitle.text = obra.title
         obraDescription.text = obra.description
         
-        lblCuraduria.text = obra.cerraduria
-        lblMuseografia.text = obra.museografia
-        lblSalas.text = obra.salas
-        lblTecnica.text = obra.tecnica
-        lblObras.text = obra.obras
+        lblCuraduria.text = "CURADURÍA: " + obra.cerraduria!
+        lblMuseografia.text = "MUSEOGRAFÍA: " + obra.museografia!
+        lblSalas.text = "SALAS: " + obra.salas!
+        lblTecnica.text = "TÉCNICA: " + obra.tecnica!
+        lblObras.text = "OBRAS: " + obra.obras!
         
     }
     

@@ -16,5 +16,5 @@ struct NewsList: Codable {
 struct Noticia: Codable {
     let id, title, subtitle: String?
     let date, description: String?
-    let imageUrl: String?
+    let photoUrl: String
 }

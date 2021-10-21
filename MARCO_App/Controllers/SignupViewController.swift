@@ -24,37 +24,42 @@ class SignupViewController: UIViewController {
     
     @IBAction func signUp(_ sender: Any) {
         guard let email = emailField.text else {
-            print("Error de email")
+            displayAlert(title: "Error", message: "Verifique los datos ingresados")
             return
         }
         
         guard let password = pwdField.text else {
-            print("Error en contraseña")
+            displayAlert(title: "Error", message: "Verifique los datos ingresados")
             return
         }
         
         guard let password2 = pwdConfirmField.text else {
-            print("Error de email")
+            displayAlert(title: "Error", message: "Verifique los datos ingresados")
             return
         }
         
         if password != password2 {
-            print("Contraseñas no coinciden")
+            displayAlert(title: "Error", message: "Las contraseñas no coinciden")
             return
         }
         
         Auth.auth().createUser(withEmail: email, password: password) {
             authResult, error in
             if error != nil {
-                print(error!)
+                self.displayAlert(title: "Error", message: "Utiliza un correo y contraseña válidos (8+ caracteres)")
+                return
             }
             else {
-                print("Correcto registro de usuario \(authResult?.user.uid ?? "")")
-                
-                
                 self.performSegue(withIdentifier: "segueSignUp", sender: nil)
                 
             }
         }
+    }
+    
+    func displayAlert(title: String, message: String) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(action)
+        present(alertController, animated: true, completion: nil)
     }
 }

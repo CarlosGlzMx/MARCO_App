@@ -37,6 +37,7 @@
 		EAC778B32717286E0038BDE9 /* EventoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC778B22717286E0038BDE9 /* EventoModel.swift */; };
 		EAE15F642717BD14004D0F05 /* NoticiaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */; };
 		EAE15F652717BD14004D0F05 /* NoticiaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAE15F632717BD14004D0F05 /* NoticiaCollectionViewCell.xib */; };
+		EAF351162720F7F2003D9990 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF351152720F7F2003D9990 /* Extensions.swift */; };
 		EAFA333C26E80AF10072D0AC /* ObraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA333A26E80AF10072D0AC /* ObraViewController.swift */; };
 		EAFA333D26E80AF10072D0AC /* ObraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAFA333B26E80AF10072D0AC /* ObraViewController.xib */; };
 		FB622386270B475300BB46D8 /* ExposicionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB622385270B475300BB46D8 /* ExposicionModel.swift */; };
@@ -101,6 +102,7 @@
 		EAC778B22717286E0038BDE9 /* EventoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EventoModel.swift; path = MARCO_App/Controllers/EventoModel.swift; sourceTree = SOURCE_ROOT; };
 		EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticiaCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAE15F632717BD14004D0F05 /* NoticiaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoticiaCollectionViewCell.xib; sourceTree = "<group>"; };
+		EAF351152720F7F2003D9990 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EAFA333A26E80AF10072D0AC /* ObraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObraViewController.swift; sourceTree = "<group>"; };
 		EAFA333B26E80AF10072D0AC /* ObraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ObraViewController.xib; sourceTree = "<group>"; };
 		EB980994DC32ACAD37A270DC /* Pods-MARCO_AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARCO_AppTests.release.xcconfig"; path = "Target Support Files/Pods-MARCO_AppTests/Pods-MARCO_AppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 		CB79BADB26D5B291002EBF04 /* MARCO_App */ = {
 			isa = PBXGroup;
 			children = (
+				EAF351142720F7DD003D9990 /* Extensions */,
 				6F22D8EA26E907E900B287E8 /* GoogleService-Info.plist */,
 				CB79BB0E26D5B30C002EBF04 /* Controllers */,
 				CB79BB0D26D5B303002EBF04 /* Views */,
@@ -259,6 +262,14 @@
 				EAE15F622717BD14004D0F05 /* NoticiaCollectionViewCell.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EAF351142720F7DD003D9990 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EAF351152720F7F2003D9990 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +525,7 @@
 				CB79BAE126D5B291002EBF04 /* ViewController.swift in Sources */,
 				EAC778B127171C0A0038BDE9 /* NoticiaModel.swift in Sources */,
 				CBEFB9EB26E9AAF6005AF830 /* ReservacionViewController.swift in Sources */,
+				EAF351162720F7F2003D9990 /* Extensions.swift in Sources */,
 				EA3D91D5270FF58D00C89206 /* NavigationController.swift in Sources */,
 				CB79BADD26D5B291002EBF04 /* AppDelegate.swift in Sources */,
 				CB79BADF26D5B291002EBF04 /* SceneDelegate.swift in Sources */,

@@ -66,18 +66,23 @@ class NoticiasViewController: UIViewController, UICollectionViewDelegate, UIColl
         let date = noticia.date
         cell.noticiaTitle.text = name
         cell.noticiaDate.text = date
+        cell.noticiaSubtitle.text = noticia.subtitle
+        cell.noticiaDescription.text = noticia.description
+        cell.contentView.layer.borderWidth = 2
+        cell.contentView.layer.borderColor = UIColor.black.cgColor
+        cell.contentView.layer.cornerRadius = 6
         
         
-//        let url = URL(string: "")!
-//        cell.obraImage.downloaded(from: url)
-        cell.noticiaImage.image = UIImage(named: "Obra2")
+        let url = URL(string: noticia.photoUrl)!
+        cell.noticiaImage.load(url: url)
+        //cell.noticiaImage.image = UIImage(named: "Obra2")
         
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-           return CGSize(width: 325, height: 200)
+           return CGSize(width: 350, height: 250)
        }
     
     
