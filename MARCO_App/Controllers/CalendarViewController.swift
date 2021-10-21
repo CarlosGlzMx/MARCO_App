@@ -54,8 +54,16 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let event = events[indexPath.section].events[indexPath.row]
         let cell = UITableViewCell(style: .default, reuseIdentifier: "eventCell")
+        cell.backgroundColor = UIColor(red: 244 / 255, green: 237 / 255, blue: 231 / 255, alpha: 1)
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.contentMode = .scaleToFill
         cell.textLabel?.text = event
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        (view as! UITableViewHeaderFooterView).contentView.backgroundColor = UIColor(red: 255 / 255, green: 190 / 255, blue: 8 / 255, alpha: 1)
+        (view as! UITableViewHeaderFooterView).textLabel?.textColor = UIColor.black
     }
 
 

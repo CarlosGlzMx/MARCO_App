@@ -81,12 +81,13 @@ class ReservacionViewController: UIViewController {
         }
         
         guard let size = sizeField.text else {
-            displayAlert(title: "Error", message: "El password no es válido")
+            displayAlert(title: "Error", message: "El tamaño no es válido")
             return
         }
         
         if !size.isInt || Int(size) ?? 0 < 1 {
                 displayAlert(title: "Error", message: "Elige un número de invitados válido")
+            return
         }
         
         guard let userId = Auth.auth().currentUser?.uid else {
